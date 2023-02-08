@@ -13,7 +13,7 @@ http://orteil.dashnet.org
 /*=====================================================================================
 MISC HELPER FUNCTIONS
 =======================================================================================*/
-const maxIq = -69420
+const maxIq = 230
 const raymondIq = 172
 const yanjiaIq = 155
 const williamIq = 157
@@ -7063,10 +7063,10 @@ Game.Launch=function()
 						]));
 						
 						if (Game.Objects['Factory'].amount>0) list.push(choose([
-						'News : rice cooker factories linked to global warming!',
-						'News : rice cooker factories involved in chocolate weather controversy!',
-						'News : rice cooker factories on strike, robotic asians employed to replace workforce!',
-						'News : rice cooker factories on strike - workers demand to stop being paid in rice!',
+						'News : rice factories linked to global warming!',
+						'News : rice factories involved in chocolate weather controversy!',
+						'News : rice factories on strike, robotic asians employed to replace workforce!',
+						'News : rice factories on strike - workers demand to stop being paid in rice!',
 						'News : factory-made rice crackers linked to obesity, says study.'
 						]));
 						
@@ -7183,19 +7183,19 @@ Game.Launch=function()
 						]));
 						
 						if (Game.season=='halloween' && Game.cookiesEarned>=1000) list.push(choose([
-						'News : strange twisting creatures amass around cookie factories, nibble at assembly lines.',
-						'News : ominous wrinkly monsters take massive bites out of cookie production; "this can\'t be hygienic", worries worker.',
-						'News : pagan rituals on the rise as children around the world dress up in strange costumes and blackmail homeowners for candy.',
-						'News : new-age terrorism strikes suburbs as houses find themselves covered in eggs and toilet paper.',
-						'News : children around the world "lost and confused" as any and all Halloween treats have been replaced by cookies.'
+						'News : strange twisting creatures amass around rice factories, nibble at assembly lines.',
+						'News : ominous wrinkly monsters take massive bites out of rice production; "this can\'t be hygienic", worries worker.',
+						'News : pagan rituals on the rise as children around the world dress up in strange costumes and blackmail homeowners for rice instead of candy.',
+						'News : new-age terrorism strikes suburbs as houses find themselves covered in eggs and wet rice paper.',
+						'News : children around the world "lost and confused" as any and all rice have been replaced by Halloween candy.'
 						]));
 						
 						if (Game.season=='christmas' && Game.cookiesEarned>=1000) list.push(choose([
-						'News : bearded maniac spotted speeding on flying sleigh! Investigation pending.',
-						'News : Santa Claus announces new brand of breakfast treats to compete with cookie-flavored cereals! "They\'re ho-ho-horrible!" says Santa.',
-						'News : "You mean he just gives stuff away for free?!", concerned moms ask. "Personally, I don\'t trust his beard."',
+						'News : bearded maniac spotted speeding on flying sleigh! Investigation pending. \"Probably just another Fat American\" comments Asian parents.',
+						'News : Santa Claus announces new brand of breakfast treats to compete with rice-flavored cereals! "They\'re ho-ho-horrible!" says Santa.',
+						'News : "You mean he just gives stuff away for free?!", confused Asian parents ask. "All those damn brats just get things they don\'t deserve."',
 						'News : obese jolly lunatic still on the loose, warn officials. "Keep your kids safe and board up your chimneys. We mean it."',
-						'News : children shocked as they discover Santa Claus isn\'t just their dad in a costume after all!<br>"I\'m reassessing my life right now", confides Laura, aged 6.',
+						'News : children shocked as they discover Santa Claus isn\'t just their dad in a costume after all!<br>"I\'m reassessing my life right now", confides Laura, aged 6. \"That\'s what they want you to think.\" adds a troll.',
 						'News : mysterious festive entity with quantum powers still wrecking havoc with army of reindeer, officials say.',
 						'News : elves on strike at toy factory! "We will not be accepting reindeer chow as payment anymore. And stop calling us elves!"',
 						'News : elves protest around the nation; wee little folks in silly little outfits spread mayhem, destruction; rabid reindeer running rampant through streets.',
@@ -9447,12 +9447,12 @@ Game.Launch=function()
 		Game.UnlockAt=[];//this contains an array of every upgrade with a cookie requirement in the form of {cookies:(amount of cookies earned required),name:(name of upgrade or achievement to unlock)} (and possibly require:(name of upgrade of achievement to own))
 		//note : the cookie will not be added to the list if it contains locked:1 (use for seasonal cookies and such)
 		
-		var strCookieProductionMultiplierPlus=loc("Cookie production multiplier <b>+%1%</b>.",'[x]');
+		var strCookieProductionMultiplierPlus=loc("Rice production multiplier <b>+%1%</b>.",'[x]');
 		var getStrCookieProductionMultiplierPlus=function(x)
 		{return strCookieProductionMultiplierPlus.replace('[x]',x);}
 		var getStrThousandFingersGain=function(x)
 		{return loc("Multiplies the gain from %1 by <b>%2</b>.",[getUpgradeName("Thousand fingers"),x]);}
-		var strKittenDesc=loc("You gain <b>more CpS</b> the more milk you have.");
+		var strKittenDesc=loc("You gain <b>more Rps</b> the more sauce and curry you have.");
 		var getStrClickingGains=function(x)
 		{return loc("Clicking gains <b>+%1% of your CpS</b>.",x);}
 		
@@ -10170,11 +10170,11 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'No-Carb Rice',desc:'This isn\'t happening!',icon:[26,3],power:									5,price: 9999999999999999*5});
 		Game.NewUpgradeCookie({name:'Crazy Rice',desc:'I don\t know why, but I\m digging this.',icon:[26,4],power:	5,price: 9999999999999999*5});
 		Game.NewUpgradeCookie({name:'粽子',desc:'太好了!!!',icon:[27,3],power:																	3,price: 99999999999999999});
-		Game.NewUpgradeCookie({name:'Tuiles',desc:'These never go out of tile.',icon:[27,4],power:																													3,price: 99999999999999999*5});
-		Game.NewUpgradeCookie({name:'Chocolate-stuffed biscuits',desc:'A princely snack!<br>The holes are so the chocolate stuffing can breathe.',icon:[28,3],power:												3,price: 999999999999999999});
-		Game.NewUpgradeCookie({name:'Checker cookies',desc:'A square cookie? This solves so many storage and packaging problems! You\'re a genius!',icon:[28,4],power:												3,price: 999999999999999999*5});
-		Game.NewUpgradeCookie({name:'Butter cookies',desc:'These melt right off your mouth and into your heart. (Let\'s face it, they\'re rather fattening.)',icon:[29,3],power:									3,price: 9999999999999999999});
-		Game.NewUpgradeCookie({name:'Cream cookies',desc:'It\'s like two chocolate chip cookies! But brought together with the magic of cream! It\'s fiendishly perfect!',icon:[29,4],power:						3,price: 9999999999999999999*5});
+		Game.NewUpgradeCookie({name:'American Fried Rice',desc:'While it may seems as though this dish is deffinitely from the United States of America, it is actually from Thailand. That\'s pretty funny.',icon:[27,4],power:																													3,price: 99999999999999999*5});
+		Game.NewUpgradeCookie({name:'Chili Rice',desc:'It\'s pretty self explanatory I guess.',icon:[28,3],power:												3,price: 999999999999999999});
+		Game.NewUpgradeCookie({name:'Rice and Beans',desc:'I\'m sorry for all of the Mexicans who played this whole game just waiting for this rice dish.',icon:[28,4],power:												3,price: 999999999999999999*5});
+		Game.NewUpgradeCookie({name:'Claypot Rice',desc:'If you were to ask me why claypot is better than other pots...<br>I honestly wouldn\'t know.',icon:[29,3],power:									3,price: 9999999999999999999});
+		Game.NewUpgradeCookie({name:'Dosa',desc:'Yeah, that one Indian dish turns out uses rice.',icon:[29,4],power:						3,price: 9999999999999999999*5});
 
 		order=0;
 		var desc=loc("Placing an upgrade in this slot will make its effects <b>permanent</b> across all playthroughs.");
@@ -10406,12 +10406,12 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'Ruby chocolate butter biscuit',desc:'Rewarded for owning 250 of everything.<br>Covered in a rare red chocolate, this biscuit is etched to represent the face of a cookie industrialist gone mad with power.',icon:[28,8],power:	10,price: 999999999999999999999999999999*butterBiscuitMult,locked:1});
 		
 		order=10020;
-		Game.NewUpgradeCookie({name:'Gingersnaps',desc:'Cookies with a soul. Probably.',icon:[29,10],power:						4,price: 99999999999999999999});
-		Game.NewUpgradeCookie({name:'Cinnamon cookies',desc:'The secret is in the patented swirly glazing.',icon:[23,8],power:						4,price: 99999999999999999999*5});
-		Game.NewUpgradeCookie({name:'Vanity cookies',desc:'One tiny candied fruit sits atop this decadent cookie.',icon:[22,8],power:						4,price: 999999999999999999999});
-		Game.NewUpgradeCookie({name:'Cigars',desc:'Close, but no match for those extravagant cookie straws they serve in coffee shops these days.',icon:[25,8],power:						4,price: 999999999999999999999*5});
-		Game.NewUpgradeCookie({name:'Pinwheel cookies',desc:'Bringing you the dizzying combination of brown flavor and beige taste!',icon:[22,10],power:						4,price: 9999999999999999999999});
-		Game.NewUpgradeCookie({name:'Fudge squares',desc:'Not exactly cookies, but you won\'t care once you\'ve tasted one of these.<br>They\'re so good, it\'s fudged-up!',icon:[24,8],power:						4,price: 9999999999999999999999*5});
+		Game.NewUpgradeCookie({name:'Rice with ginger',desc:'You had some leftover ginger and some rice, what are you going to do?',icon:[29,10],power:						4,price: 99999999999999999999});
+		Game.NewUpgradeCookie({name:'年糕1',desc:'These good old rice cakes work well with any Chinese dish.',icon:[23,8],power:						4,price: 99999999999999999999*5});
+		Game.NewUpgradeCookie({name:'年糕2',desc:'A different type of rice cake, this one is brown and is a dessert.',icon:[22,8],power:						4,price: 999999999999999999999});
+		Game.NewUpgradeCookie({name:'Schr&#214;dinger\'s Rice',desc:'Close, but no match for those extravagant cookie straws they serve in coffee shops these days.',icon:[25,8],power:						4,price: 999999999999999999999*5});
+		Game.NewUpgradeCookie({name:'Coconut Steamed Rice',desc:'It\'s your typical rice, but is coconutty.',icon:[22,10],power:						4,price: 9999999999999999999999});
+		Game.NewUpgradeCookie({name:'Onigiri',desc:'You take a rice ball and wrap it with some seaweed. I guess you can add some other stuff, but rice is the star of the dish.',icon:[24,8],power:						4,price: 9999999999999999999999*5});
 		
 		order=10030;
 		Game.NewUpgradeCookie({name:'Digits',desc:'Three flavors, zero phalanges.',icon:[26,8],require:'Box of brand biscuits',power:												2,	price:	999999999999999*5});
@@ -10424,9 +10424,9 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'Butter swirls',desc:'These are equal parts sugar, butter, and warm fuzzy feelings - all of which cause millions of deaths every day.',icon:[26,9],require:'Tin of butter cookies',power:							4,	price:	9999999999999999999999999});
 		
 		order=10020;
-		Game.NewUpgradeCookie({name:'Shortbread biscuits',desc:'These rich butter cookies are neither short, nor bread. What a country!',icon:[23,10],power:						4,price: 99999999999999999999999});
-		Game.NewUpgradeCookie({name:'Millionaires\' shortbreads',desc:'Three thought-provoking layers of creamy chocolate, hard-working caramel and crumbly biscuit in a poignant commentary of class struggle.',icon:[24,10],power:						4,price: 99999999999999999999999*5});
-		Game.NewUpgradeCookie({name:'Caramel cookies',desc:'The polymerized carbohydrates adorning these cookies are sure to stick to your teeth for quite a while.',icon:[25,10],power:						4,price: 999999999999999999999999});
+		Game.NewUpgradeCookie({name:'Spicy Tuna Roll',desc:'This one is pretty self-explanatory.',icon:[23,10],power:						4,price: 99999999999999999999999});
+		Game.NewUpgradeCookie({name:'Salmon Roll',desc:'Same thing!!!',icon:[24,10],power:						4,price: 99999999999999999999999*5});
+		Game.NewUpgradeCookie({name:'Rice and Gravy',desc:'You have a nice bowl of rice, and you have some gravy because you ran out of mashed potatoes.',icon:[25,10],power:						4,price: 999999999999999999999999});
 		
 		
 		var desc=function(totalHours){
@@ -13004,7 +13004,7 @@ Game.Launch=function()
 		{
 			return {
 				name:'5.0 GPA',
-				desc:loc("Rice production x%1 for %2!",[pow,Game.sayTime(time*Game.fps,-1)]),
+				desc:loc("Cookie production x%1 for %2!",[pow,Game.sayTime(time*Game.fps,-1)]),
 				icon:[10,14],
 				time:time*Game.fps,
 				add:true,
