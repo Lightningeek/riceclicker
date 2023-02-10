@@ -3394,7 +3394,7 @@ Game.Launch=function()
 					if (Game.season!='' && Game.season==Game.baseSeason)
 					{
 						if (Game.season=='valentines') Game.Notify(loc("Valentine's Day!"),loc("It's <b>Valentine's season</b>!<br>Love's in the air and cookies are just that much sweeter!"),[20,3],60*3);
-						else if (Game.season=='fools') Game.Notify(loc("Business Day!"),loc("It's <b>Business season</b>!<br>Don't panic! Things are gonna be looking a little more corporate for a few days."),[17,6],60*3);
+						else if (Game.season=='fools') Game.Notify(loc("Business Day!"),loc("It's <b>Business season</b>!<br>Panic! Things are gonna be looking a little more asian for a few days."),[17,6],60*3);
 						else if (Game.season=='halloween') Game.Notify(loc("Halloween!"),loc("It's <b>Halloween season</b>!<br>Everything is just a little bit spookier!"),[13,8],60*3);
 						else if (Game.season=='christmas') Game.Notify(loc("Christmas time!"),loc("It's <b>Christmas season</b>!<br>Bring good cheer to all and you just may get cookies in your stockings!"),[12,10],60*3);
 						else if (Game.season=='easter') Game.Notify(loc("Easter!"),loc("It's <b>Easter season</b>!<br>Keep an eye out and you just might click a rabbit or two!"),[0,12],60*3);
@@ -3425,8 +3425,8 @@ Game.Launch=function()
 			var cookiesForfeited=Game.cookiesEarned;
 			if (!hard)
 			{
-				if (cookiesForfeited>=1000000) Game.Win('Sacrifice');
-				if (cookiesForfeited>=1000000000) Game.Win('Oblivion');
+				if (cookiesForfeited>=1000000) Game.Win('you ascended only now? DISAPPOINTMENT');
+				if (cookiesForfeited>=1000000000) Game.Win('NO ONE CARES ABOUT THAT SMALL AMOUNT OF RICE');
 				if (cookiesForfeited>=1000000000000) Game.Win('From scratch');
 				if (cookiesForfeited>=1000000000000000) Game.Win('Nihilism');
 				if (cookiesForfeited>=1000000000000000000) Game.Win('Dematerialize');
@@ -3443,7 +3443,7 @@ Game.Launch=function()
 				if (cookiesForfeited>=1000000000000000000000000000000000000000000000000000) Game.Win('Smurf account');
 				if (cookiesForfeited>=1000000000000000000000000000000000000000000000000000000) Game.Win('If at first you don\'t succeed');
 				
-				if (Math.round(Game.cookies)==1000000000000) Game.Win('When the cookies ascend just right');
+				if (Math.round(Game.cookies)==1000000000000) Game.Win('When the asians ascend just right');
 			}
 			
 			Game.killBuffs();
