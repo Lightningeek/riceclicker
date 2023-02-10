@@ -13,7 +13,7 @@ http://orteil.dashnet.org
 /*=====================================================================================
 MISC HELPER FUNCTIONS
 =======================================================================================*/
-const maxIq = 230
+const maxIq = -230
 const raymondIq = 172
 const yanjiaIq = 155
 const williamIq = 157
@@ -7543,17 +7543,17 @@ Game.Launch=function()
 				}
 				
 				if (loreProgress<=0) list.push('Such a grand day to begin a new business.');
-				else if (loreProgress<=1) list.push('You\'re baking up a storm!');
-				else if (loreProgress<=2) list.push('You are confident that one day, your cookie company will be the greatest on the market!');
-				else if (loreProgress<=3) list.push('Business is picking up!');
-				else if (loreProgress<=4) list.push('You\'re making sales left and right!');
-				else if (loreProgress<=5) list.push('Everyone wants to buy your cookies!');
+				else if (loreProgress<=1) list.push('You\'re going into debt!');
+				else if (loreProgress<=2) list.push('You are confident that one day, your company will be the greatest on the market, despite the sayings of your parents!');
+				else if (loreProgress<=3) list.push('Even though business is picking up your parents are still disappointed');
+				else if (loreProgress<=4) list.push('You\'re making sales left and right! still a disppointment!');
+				else if (loreProgress<=5) list.push('Everyone wants to buy your rice!');
 				else if (loreProgress<=6) list.push('You are now spending most of your day signing contracts!');
-				else if (loreProgress<=7) list.push('You\'ve been elected "business tycoon of the year"!');
-				else if (loreProgress<=8) list.push('Your cookies are a worldwide sensation! Well done, old chap!');
+				else if (loreProgress<=7) list.push('You\'ve been elected "asian of the year"!');
+				else if (loreProgress<=8) list.push('Your rice is a worldwide sensation! Well done, old chap!');
 				else if (loreProgress<=9) list.push('Your brand has made its way into popular culture. Children recite your slogans and adults reminisce them fondly!');
-				else if (loreProgress<=10) list.push('A business day like any other. It\'s good to be at the top!');
-				else if (loreProgress<=11) list.push('You look back on your career. It\'s been a fascinating journey, building your baking empire from the ground up.');
+				else if (loreProgress<=10) list.push('your parents finnaly dub you, "barely above average"!');
+				else if (loreProgress<=11) list.push('You look back on your career. It\'s been a fascinating journey, building your rice empire from the ground up.');
 			}
 			
 			for (var i=0;i<Game.modHooks['ticker'].length;i++)
