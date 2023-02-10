@@ -2226,7 +2226,7 @@ Game.Launch=function()
 			else name=loc("%1's Rice.Co",name);
 			Game.bakeryNameL.textContent=name;
 			name=Game.bakeryName.toLowerCase();
-			if (name=='orteil') Game.Win('God complex');
+			if (name=='maxican') Game.Win('God complex');
 			if (!App && name.indexOf('chingchong',name.length-('chingchong').length)>=0 && !Game.sesame) Game.OpenSesame();
 			Game.recalculateGains=1;
 		}
@@ -10408,8 +10408,8 @@ Game.Launch=function()
 		order=10020;
 		Game.NewUpgradeCookie({name:'Rice with ginger',desc:'You had some leftover ginger and some rice, what are you going to do?',icon:[29,10],power:						4,price: 99999999999999999999});
 		Game.NewUpgradeCookie({name:'年糕1',desc:'These good old rice cakes work well with any Chinese dish.',icon:[23,8],power:						4,price: 99999999999999999999*5});
-		Game.NewUpgradeCookie({name:'年糕2',desc:'A different type of rice cake, this one is brown and is a dessert.',icon:[22,8],power:						4,price: 999999999999999999999});
-		Game.NewUpgradeCookie({name:'Schr&#214;dinger\'s Rice',desc:'Close, but no match for those extravagant cookie straws they serve in coffee shops these days.',icon:[25,8],power:						4,price: 999999999999999999999*5});
+		Game.NewUpgradeCookie({name:'Schr&#214;dinger\'s Rice',desc:'It exists and doesn\'t exist at the same time.',icon:[22,8],power:						4,price: 999999999999999999999});
+		Game.NewUpgradeCookie({name:'年糕2',desc:'A different type of rice cake, this one is brown and is a dessert.',icon:[25,8],power:						4,price: 999999999999999999999*5});
 		Game.NewUpgradeCookie({name:'Coconut Steamed Rice',desc:'It\'s your typical rice, but is coconutty.',icon:[22,10],power:						4,price: 9999999999999999999999});
 		Game.NewUpgradeCookie({name:'Onigiri',desc:'You take a rice ball and wrap it with some seaweed. I guess you can add some other stuff, but rice is the star of the dish.',icon:[24,8],power:						4,price: 9999999999999999999999*5});
 		
@@ -12210,7 +12210,7 @@ Game.Launch=function()
 		order=2000;Game.TieredAchievement('Rise and shine','','Prism',5);
 		
 		order=30200;
-		new Game.Achievement('God complex',loc("Name yourself <b>Orteil</b>.<div class=\"warning\">Note: usurpers incur a -%1% CpS penalty until they rename themselves something else.</div>",1)+'<q>But that\'s not you, is it?</q>',[17,5]);Game.last.pool='shadow';
+		new Game.Achievement('God complex',loc("Name yourself <b>maxican</b>.<div class=\"warning\">Note: usurpers incur a -%1% CpS penalty until they rename themselves something else.</div>",1)+'<q>But that\'s not you, is it?</q>',[17,5]);Game.last.pool='shadow';
 		new Game.Achievement('Third-party',loc("Use an <b>add-on</b>.")+'<q>Some find vanilla to be the most boring flavor.</q>',[16,5]);Game.last.pool='shadow';//if you're making a mod, add a Game.Win('Third-party') somewhere in there!
 		
 		order=30050;
