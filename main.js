@@ -8857,7 +8857,7 @@ Game.Launch=function()
 			Game.UnlockTiered(this);
 			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
 		});
-		Game.last.displayName='<span style="font-size:90%;letter-spacing:-1px;position:relative;bottom:2px;">Alchemy lab</span>';//shrink
+		Game.last.displayName='<span style="font-size:70%;letter-spacing:-1px;position:relative;bottom:2px;">Asian Smart Computer</span>';//shrink
 		
 		new Game.Object('Portal','portal|portals|retrieved|[X] dimension enslaved|[X] dimensions enslaved','Opens a door to the Cookieverse.',11,7,{base:'portal',xV:32,yV:32,w:64,rows:2,x:0,y:0},1666666,function(me){
 			var mult=1;
@@ -15945,9 +15945,10 @@ window.onload=function()
 							console.log('[=== '+choose([
 								'Oh, hello!',
 								'hey, how\'s it hangin',
-								'About to cheat in some cookies or just checking for bugs?',
-								'Remember : cheated cookies taste awful!',
-								'Hey, Orteil here. Cheated cookies taste awful... or do they?',
+								'About to cheat in some rice or just checking for bugs?',
+								'Remember : cheated rice taste awful!',
+								'Hey, ANWTMT here. Cheated rice taste awful... or do they?',
+								'And honestly, why would you cheat rice, you too bad in reality DISSAPOINTMENT!!!'
 							])+' ===]');
 							Game.Load(function(){Game.Init();if (firstLaunch) Game.showLangSelection(true);});
 							//try {Game.Load(Game.Init);}
