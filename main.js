@@ -3393,7 +3393,7 @@ Game.Launch=function()
 					
 					if (Game.season!='' && Game.season==Game.baseSeason)
 					{
-						if (Game.season=='valentines') Game.Notify(loc("Valentine's Day!"),loc("It's <b>Valentine's season</b>!<br>Love's in the air and cookies are just that much sweeter!"),[20,3],60*3);
+						if (Game.season=='valentines') Game.Notify(loc("National Rainbow Sushi Roll Day!"),loc("It's <b>ANWTMT\'s speical season</b>!<br>Sushi in the air and rice are just that much tasier!"),[20,3],60*3);
 						else if (Game.season=='fools') Game.Notify(loc("Business Day!"),loc("It's <b>Business season</b>!<br>Panic! Things are gonna be looking a little more asian for a few days."),[17,6],60*3);
 						else if (Game.season=='halloween') Game.Notify(loc("Halloween!"),loc("It's <b>Halloween season</b>!<br>Everything is just a little bit spookier!"),[13,8],60*3);
 						else if (Game.season=='christmas') Game.Notify(loc("Christmas time!"),loc("It's <b>Christmas season</b>!<br>Bring good cheer to all and you just may get cookies in your stockings!"),[12,10],60*3);
@@ -7206,11 +7206,11 @@ Game.Launch=function()
 						]));
 						
 						if (Game.season=='valentines' && Game.cookiesEarned>=1000) list.push(choose([
-						'News : organ-shaped confectioneries being traded in schools all over the world; gruesome practice undergoing investigation.',
-						'News : heart-shaped candies overtaking sweets business, offering competition to cookie empire. "It\'s the economy, cupid!"',
-						'News : love\'s in the air, according to weather specialists. Face masks now offered in every city to stunt airborne infection.',
-						'News : marrying a cookie - deranged practice, or glimpse of the future?',
-						'News : boyfriend dumped after offering his lover cookies for Valentine\'s Day, reports say. "They were off-brand", shrugs ex-girlfriend.'
+						'News : Homo-phobia spreads as kids unite their rainbow rolls to form rainbows everywhere! \"It\'s not even a normal rainbow!\" answers kids as principle shivers when walking down the hall.',
+						'News : Some idiots try to eat whole rainbow sushi roll set in mouth. Somehow the dumb*** is still alive.',
+						'News : Idiot points out that it\'s Valentines season not "this random crap", crazy tests have been taken.',
+						'News : Eel sushi roll goes on crazy sale because people no longer buy it. "It\'s not like anyone cares about the full set anyways." answers Washington man.',
+						'News : Tempura sushi roll runs out, riot emerges in Uwajimaya. "I mean look, we still get paid same either way." answer employee.'
 						]));
 						
 						if (Game.season=='easter' && Game.cookiesEarned>=1000) list.push(choose([
@@ -9967,7 +9967,7 @@ Game.Launch=function()
 			}
 			return pow;
 		};
-		Game.NewUpgradeCookie({name:'Pure heart biscuits',desc:'Melty white chocolate<br>that says "I *like* like you".',season:'valentines',icon:[19,3],													power:heartPower,price: 1000000});
+		Game.NewUpgradeCookie({name:'Tuna-Topped Rainbow Sushi Roll',desc:'I mean, people just eat it because they feel guilty about their love for salmon.',season:'valentines',icon:[19,3],													power:heartPower,price: 1000000});
 		Game.NewUpgradeCookie({name:'Ardent heart biscuits',desc:'A red hot cherry biscuit that will nudge the target of your affection in interesting directions.',require:Game.last.name,season:'valentines',icon:[20,3],			power:heartPower,price: 1000000000});
 		Game.NewUpgradeCookie({name:'Sour heart biscuits',desc:'A bitter lime biscuit for the lonely and the heart-broken.',require:Game.last.name,season:'valentines',icon:[20,4],													power:heartPower,price: 1000000000000});
 		Game.NewUpgradeCookie({name:'Weeping heart biscuits',desc:'An ice-cold blueberry biscuit, symbol of a mending heart.',require:Game.last.name,season:'valentines',icon:[21,3],												power:heartPower,price: 1000000000000000});
