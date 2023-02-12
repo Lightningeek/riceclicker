@@ -3394,7 +3394,7 @@ Game.Launch=function()
 					if (Game.season!='' && Game.season==Game.baseSeason)
 					{
 						if (Game.season=='valentines') Game.Notify(loc("National Rainbow Sushi Roll Day!"),loc("It's <b>ANWTMT\'s speical season</b>!<br>Sushi in the air and rice are just that much tasier!"),[20,3],60*3);
-						else if (Game.season=='fools') Game.Notify(loc("Business Day!"),loc("It's <b>Business season</b>!<br>Panic! Things are gonna be looking a little more asian for a few days."),[17,6],60*3);
+						else if (Game.season=='fools') Game.Notify(loc("Business Day!"),loc("It's <b>Business season</b>!<br>Panic! Things are gonna be looking a little more Asian for a few days."),[17,6],60*3);
 						else if (Game.season=='halloween') Game.Notify(loc("Halloween!"),loc("It's <b>Halloween season</b>!<br>Everything is just a little bit spookier!"),[13,8],60*3);
 						else if (Game.season=='christmas') Game.Notify(loc("Christmas time!"),loc("It's <b>Christmas season</b>!<br>Bring good cheer to all and you just may get cookies in your stockings!"),[12,10],60*3);
 						else if (Game.season=='easter') Game.Notify(loc("Easter!"),loc("It's <b>Easter season</b>!<br>Keep an eye out and you just might click a rabbit or two!"),[0,12],60*3);
@@ -3443,7 +3443,7 @@ Game.Launch=function()
 				if (cookiesForfeited>=1000000000000000000000000000000000000000000000000000) Game.Win('Smurf account');
 				if (cookiesForfeited>=1000000000000000000000000000000000000000000000000000000) Game.Win('If at first you don\'t succeed');
 				
-				if (Math.round(Game.cookies)==1000000000000) Game.Win('When the asians ascend just right');
+				if (Math.round(Game.cookies)==1000000000000) Game.Win('When the Asians ascend just right');
 			}
 			
 			Game.killBuffs();
@@ -7047,7 +7047,7 @@ Game.Launch=function()
 					else
 					{
 						if (Game.Objects['Farm'].amount>0) list.push(choose([
-						'News : rice farms suspected of employing asian workforce!',
+						'News : rice farms suspected of employing Asian workforce!',
 						'News : rice farms release harmful emotional damage in our rivers, says scientist!',
 						'News : genetically-modified rice controversy strikes rice farmers!',
 						'News : free-range farm rice creackers popular with today\'s hip youth, says specialist.',
@@ -7056,16 +7056,16 @@ Game.Launch=function()
 						
 						if (Game.Objects['Mine'].amount>0) list.push(choose([
 						'News : is our planet getting lighter? Experts examine the effects of intensive rice mining.',
-						'News : '+Math.floor(Math.random()*1000+2)+' miners trapped in collapsed rice mine asian parents claim its more efficient!',
+						'News : '+Math.floor(Math.random()*1000+2)+' miners trapped in collapsed rice mine Asian parents claim its more efficient!',
 						'News : chocolate mines found to cause earthquakes and sinkholes!',
 						'News : rice mine goes awry, floods village in rice!',
-						'News : depths of rice mines found to house "peculiar, asian beings"!'
+						'News : depths of rice mines found to house "peculiar, Asian beings"!'
 						]));
 						
 						if (Game.Objects['Factory'].amount>0) list.push(choose([
 						'News : rice factories linked to global warming!',
 						'News : rice factories involved in chocolate weather controversy!',
-						'News : rice factories on strike, robotic asians employed to replace workforce!',
+						'News : rice factories on strike, robotic Asians employed to replace workforce!',
 						'News : rice factories on strike - workers demand to stop being paid in rice!',
 						'News : factory-made rice crackers linked to obesity, says study.'
 						]));
@@ -7080,7 +7080,7 @@ Game.Launch=function()
 						
 						if (Game.Objects['Temple'].amount>0) list.push(choose([
 						'News : explorers bring back ancient rice artifact from abandoned rice cooker temple; archeologists marvel at the centuries-old '+choose(['magic','carved','engraved','sculpted','royal','imperial','mummified','ritual','golden','silver','stone','cursed','plastic','bone','blood','holy','sacred','sacrificial','electronic','singing','tapdancing'])+' '+choose(['spoon','fork','pizza','washing machine','calculator','hat','piano','napkin','skeleton','gown','dagger','sword','shield','skull','emerald','bathtub','mask','rollerskates','litterbox','bait box','cube','sphere','fungus'])+'!',
-						'News : recently-discovered short grain rice temples now sparking new rice-related cult; thousands pray to asian in the sky!',
+						'News : recently-discovered short grain rice temples now sparking new rice-related cult; thousands pray to Asian in the sky!',
 						'News : just how extensive is the rice pantheon? Theologians speculate about possible '+choose(['god','goddess'])+' of '+choose([choose(animals),choose(['kazoos','web design','web browsers','kittens','atheism','handbrakes','hats','aglets','elevator music','idle games','the letter "P"','memes','hamburgers','bad puns','kerning','stand-up comedy','failed burglary attempts','clickbait','one weird tricks'])])+'.',
 						'News : theists of the world discover new rice religion - "Oh boy, guess we were wrong all along!"',
 						'News : rice heaven allegedly "sports elevator instead of stairway"; rice hell "paved with flagstone, as good intentions make for poor building material".'
@@ -7091,15 +7091,15 @@ Game.Launch=function()
 						'News : heavy dissent rages between the schools of '+choose(['water','fire','earth','air','lightning','acid','song','battle','peace','pencil','internet','space','time','brain','nature','techno','plant','bug','ice','poison','crab','kitten','dolphin','bird','punch','fart'])+' magic and '+choose(['water','fire','earth','air','lightning','acid','song','battle','peace','pencil','internet','space','time','brain','nature','techno','plant','bug','ice','poison','crab','kitten','dolphin','bird','punch','fart'])+' magic!',
 						'News : get your new charms and curses at the yearly National Asian Parent Fair! Exclusive prices on ricecookers and slippers.',
 						'News : asian wizards deny involvement in shockingly dumb newborn - infant is "fine with a b", say doctors.',
-						'News : "Any sufficiently crude magic is indistinguishable from technology", claims renowned asianwizard.'
+						'News : "Any sufficiently crude magic is indistinguishable from technology", claims renowned Asianwizard.'
 						]));
 						
 						if (Game.Objects['Shipment'].amount>0) list.push(choose([
 						'News : new rice cooker planet found, becomes target of rice-trading spaceships!',
-						'News : massive jasmine rice planet found with 99.8% certified pure asian chocolate core!',
-						'News : space tourism booming as distant planets attract more bored asians!',
+						'News : massive jasmine rice planet found with 99.8% certified pure Asian chocolate core!',
+						'News : space tourism booming as distant planets attract more bored Asians!',
 						'News : jasmine-rice-based organisms found on distant planet!',
-						'News : ancient asian beating artifacts found on distant planet; "terrifying implications", experts say.'
+						'News : ancient Asian beating artifacts found on distant planet; "terrifying implications", experts say.'
 						]));
 						
 						if (Game.Objects['Alchemy lab'].amount>0) list.push(choose([
@@ -7111,7 +7111,7 @@ Game.Launch=function()
 						]));
 						
 						if (Game.Objects['Portal'].amount>0) list.push(choose([
-						'News : nation worried as more and more unsettling asians emerge from dimensional portals!',
+						'News : nation worried as more and more unsettling Asians emerge from dimensional portals!',
 						'News : dimensional portals involved in city-engulfing disaster!',
 						'News : tourism to riceverse popular with bored teenagers! Casualty rate as high as 73%!',
 						'News : riceverse portals suspected to cause fast turning into white person and obsession with rice, says study.',
@@ -7120,7 +7120,7 @@ Game.Launch=function()
 						
 						if (Game.Objects['Time machine'].amount>0) list.push(choose([
 						'News : time machines involved in rice-smuggling scandal! Or are they?',
-						'News : time machines used in unlawful non-asian rice',
+						'News : time machines used in unlawful non-Asian rice',
 						'News : sticky rice brought back from the past "unfit for human consumption", says historian.',
 						'News : various historical figures inexplicably replaced with talking lumps of wild rice!',
 						'News : "I have seen the future," says white time machine operator, "and I do not wish to go there again."'
@@ -7144,7 +7144,7 @@ Game.Launch=function()
 						
 						if (Game.Objects['Chancemaker'].amount>0) list.push(choose([
 						'News : strange statistical anomalies continue as white run weather forecast proves accurate an unprecedented 3 days in a row!',
-						'News : local casino ruined as all asian gamblers somehow hit a week-long winning streak! "We might still be okay", says owner before being hit by lightning 47 times.',
+						'News : local casino ruined as all Asian gamblers somehow hit a week-long winning streak! "We might still be okay", says owner before being hit by lightning 47 times.',
 						'News : neighboring nation somehow elects president with sensible policies in freak accident of random chance!',
 						'News : million-to-one event sees gritty movie reboot turning out better than the original! "We have no idea how this happened", say movie execs.',
 						'News : all scratching tickets printed as winners, prompting national economy to crash and, against all odds, recover overnight.',
@@ -7160,7 +7160,7 @@ Game.Launch=function()
 						
 						if (Game.Objects['Javascript console'].amount>0) list.push(choose([
 						'News : strange fad has parents giving their newborns names such as Bingchiling.js or Liam.js. At least one Baby.js reported.',
-						'News : coding is hip! More and more teenagers turn to technical fields like programming, ensuring a future robot apocalypse and the doom of all asiankind.',
+						'News : coding is hip! More and more teenagers turn to technical fields like programming, ensuring a future robot apocalypse and the doom of all Asiankind.',
 						'News : developers unsure what to call their new javascript libraries as all combinations of any 3 dictionary words have already been taken.',
 						'News : nation holds breath as nested ifs about to hatch.',
 						'News : clueless copywriter forgets to escape a quote, ends news line prematurely; last words reported to be "Huh, why isn',
@@ -7168,18 +7168,18 @@ Game.Launch=function()
 						
 						if (Game.Objects['Idleverse'].amount>0) list.push(choose([
 						'News : is another you living out their dreams in an alternate universe? Probably, you lazy bum!',
-						'News : public recoils at the notion of a cosmos made of asian slippers. "I kinda hoped there\'d be more to it", says distraught citizen.',
+						'News : public recoils at the notion of a cosmos made of Asian slippers. "I kinda hoped there\'d be more to it", says distraught citizen.',
 						'News : with an infinity of parallel universes, people turn to reassuring alternate dimensions, which only number "in the high 50s".',
 						'News : "I find solace in the knowledge that at least some of my alternate selves are probably getting good grades out there", says citizen\'s last remaining exemplar in the multiverse.',
-						'News : asian writers point to actual multiverse in defense of dubious plot points. "See? I told you it wasn\'t \'hackneyed and contrived\'!"'
+						'News : Asian writers point to actual multiverse in defense of dubious plot points. "See? I told you it wasn\'t \'hackneyed and contrived\'!"'
 						]));
 						
 						if (Game.Objects['Cortex baker'].amount>0) list.push(choose([
 						'News : cortex baker wranglers kindly remind employees that cortex bakers are the bakery\'s material property and should not be endeared with nicknames.',
-						'News : space-faring employees advised to ignore unusual thoughts and urges experienced within 2 parsecs of gigantic asians, say guidelines.',
-						'News : astronomers warn of asian grade trajectory drift, fear future head-on collisions resulting in costly concussions.',
+						'News : space-faring employees advised to ignore unusual thoughts and urges experienced within 2 parsecs of gigantic Asians, say guidelines.',
+						'News : astronomers warn of Asian grade trajectory drift, fear future head-on collisions resulting in costly concussions.',
 						'News : asian identified with an IQ of only quintuple digits: "just a bit of a dummy", say specialists.',
-						'News : are you smarter than a master asian? New game show deemed "unfair" by contestants.'
+						'News : are you smarter than a master Asian? New game show deemed "unfair" by contestants.'
 						]));
 						
 						if (Game.season=='halloween' && Game.cookiesEarned>=1000) list.push(choose([
@@ -7549,7 +7549,7 @@ Game.Launch=function()
 				else if (loreProgress<=4) list.push('You\'re making sales left and right! still a disppointment!');
 				else if (loreProgress<=5) list.push('Everyone wants to buy your rice!');
 				else if (loreProgress<=6) list.push('You are now spending most of your day signing contracts!');
-				else if (loreProgress<=7) list.push('You\'ve been elected "asian of the year"!');
+				else if (loreProgress<=7) list.push('You\'ve been elected "Asian of the year"!');
 				else if (loreProgress<=8) list.push('Your rice is a worldwide sensation! Well done, old chap!');
 				else if (loreProgress<=9) list.push('Your brand has made its way into popular culture. Children recite your slogans and adults reminisce them fondly!');
 				else if (loreProgress<=10) list.push('your parents finnaly dub you, "barely above average"!');
@@ -9606,7 +9606,7 @@ Game.Launch=function()
 		new Game.Upgrade('Trillion fingers',getStrThousandFingersGain(20)+'<q>clickityclickityclickityclickity</q>',1000000000,[0,16]);Game.MakeTiered(Game.last,7,0);
 		
 		order=200;
-		Game.TieredUpgrade('Forwards from grandma','<q>RE:RE:thought you\'d get a kick out of this ;))</q>','Grandma',1);
+		Game.TieredUpgrade('Forwards from 老爷','<q>加油加油!</q>','Grandma',1);
 		Game.TieredUpgrade('Steel-poop rolling pins','<q>Just what you kneaded.</q>','Grandma',2);
 		Game.TieredUpgrade('Lubricated dentures','<q>squish</q>','Grandma',3);
 		
