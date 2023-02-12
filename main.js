@@ -4425,10 +4425,10 @@ Game.Launch=function()
 			
 			var age=Date.now()-Game.lumpT;
 			str+='<div class="line"></div>';
-			if (age<0) str+=loc("This sugar lump has been exposed to time travel shenanigans and will take an excruciating <b>%1</b> to reach maturity.",Game.sayTime(((Game.lumpMatureAge-age)/1000+1)*Game.fps,-1));
-			else if (age<Game.lumpMatureAge) str+=loc("This sugar lump is still growing and will take <b>%1</b> to reach maturity.",Game.sayTime(((Game.lumpMatureAge-age)/1000+1)*Game.fps,-1));
-			else if (age<Game.lumpRipeAge) str+=loc("This sugar lump is mature and will be ripe in <b>%1</b>.<br>You may <b>click it to harvest it now</b>, but there is a <b>50% chance you won't get anything</b>.",Game.sayTime(((Game.lumpRipeAge-age)/1000+1)*Game.fps,-1));
-			else if (age<Game.lumpOverripeAge) str+=loc("<b>This sugar lump is ripe! Click it to harvest it.</b><br>If you do nothing, it will auto-harvest in <b>%1</b>.",Game.sayTime(((Game.lumpOverripeAge-age)/1000+1)*Game.fps,-1));
+			if (age<0) str+=loc("This soy sauce droplet has been exposed to bad grade shenanigans and will take an excruciating <b>%1</b> to reach maturity.",Game.sayTime(((Game.lumpMatureAge-age)/1000+1)*Game.fps,-1));
+			else if (age<Game.lumpMatureAge) str+=loc("This soy sauce droplet is still growing and will take <b>%1</b> to reach maturity.",Game.sayTime(((Game.lumpMatureAge-age)/1000+1)*Game.fps,-1));
+			else if (age<Game.lumpRipeAge) str+=loc("This soy sauce droplet is mature and will be ripe in <b>%1</b>.<br>You may <b>click it to harvest it now</b>, but there is a <b>50% chance you won't get anything</b>.",Game.sayTime(((Game.lumpRipeAge-age)/1000+1)*Game.fps,-1));
+			else if (age<Game.lumpOverripeAge) str+=loc("<b>This soy sauce droplet is ripe! Click it to harvest it.</b><br>If you do nothing, it will auto-harvest in <b>%1</b>.",Game.sayTime(((Game.lumpOverripeAge-age)/1000+1)*Game.fps,-1));
 			
 			var phase=(age/Game.lumpOverripeAge)*7;
 			if (phase>=3)
@@ -4441,9 +4441,9 @@ Game.Launch=function()
 			}
 			
 			str+='<div class="line"></div>';
-			str+=loc("Your sugar lumps mature after <b>%1</b>,<br>ripen after <b>%2</b>,<br>and fall after <b>%3</b>.",[Game.sayTime((Game.lumpMatureAge/1000)*Game.fps,-1),Game.sayTime((Game.lumpRipeAge/1000)*Game.fps,-1),Game.sayTime((Game.lumpOverripeAge/1000)*Game.fps,-1)]);
+			str+=loc("Your soy sauce droplets mature after <b>%1</b>,<br>ripen after <b>%2</b>,<br>and fall after <b>%3</b>.",[Game.sayTime((Game.lumpMatureAge/1000)*Game.fps,-1),Game.sayTime((Game.lumpRipeAge/1000)*Game.fps,-1),Game.sayTime((Game.lumpOverripeAge/1000)*Game.fps,-1)]);
 			
-			str+='<div class="line"></div>'+loc("&bull; Sugar lumps can be harvested when mature, though if left alone beyond that point they will start ripening (increasing the chance of harvesting them) and will eventually fall and be auto-harvested after some time.<br>&bull; Sugar lumps are delicious and may be used as currency for all sorts of things.<br>&bull; Once a sugar lump is harvested, another one will start growing in its place.<br>&bull; Note that sugar lumps keep growing when the game is closed.")+'</div>';
+			str+='<div class="line"></div>'+loc("&bull; Soy sauce lumps can be harvested when mature, though if left alone beyond that point they will start ripening (increasing the chance of harvesting them) and will eventually fall and be auto-harvested after some time.<br>&bull; Soy sauce droplets are delicious and may be used as currency for all sorts of things.<br>&bull; Once a soy sauce droplet is harvested, another one will start growing in its place.<br>&bull; Note that soy sauce droplets keep growing when the game is closed.")+'</div>';
 			return str;
 		}
 		Game.computeLumpTimes=function()
@@ -4640,7 +4640,7 @@ Game.Launch=function()
 				Game.lumps=0;
 				Game.computeLumpType();
 				
-				Game.Notify(loc("Sugar lumps!"),loc("Because you've baked a <b>billion cookies</b> in total, you are now attracting <b>sugar lumps</b>. They coalesce quietly near the top of your screen, under the Stats button.<br>You will be able to harvest them when they're ripe, after which you may spend them on all sorts of things!"),[23,14]);
+				Game.Notify(loc("Soy sauce droplets!"),loc("Because you've cooked a <b>billion rice</b> in total, you are now attracting <b>soy suace droplets</b>. They coalesce quietly near the top of your screen, under the Stats button.<br>You will be able to harvest them when they're ripe, after which you may spend them on all sorts of things!"),[23,14]);
 			}
 			var age=Date.now()-Game.lumpT;
 			if (age>Game.lumpOverripeAge)
