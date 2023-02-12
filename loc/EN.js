@@ -1878,7 +1878,7 @@ AddLanguage('EN','english',{
 	"[Upgrade name 4]Million fingers": "Million fingers",
 	"[Upgrade name 5]Billion fingers": "Billion fingers",
 	"[Upgrade name 6]Trillion fingers": "Trillion fingers",
-	"[Upgrade name 7]Forwards from grandma": "Forwards from grandma",
+	"[Upgrade name 7]Forwards from 老爷": "Forwards from 老爷",
 	"[Upgrade name 8]Steel-plated rolling pins": "Steel-plated rolling pins",
 	"[Upgrade name 9]Lubricated dentures": "Lubricated dentures",
 	"[Upgrade name 10]Cheap hoes": "Cheap hoes",
