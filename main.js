@@ -4443,7 +4443,7 @@ Game.Launch=function()
 			str+='<div class="line"></div>';
 			str+=loc("Your soy sauce droplets mature after <b>%1</b>,<br>ripen after <b>%2</b>,<br>and fall after <b>%3</b>.",[Game.sayTime((Game.lumpMatureAge/1000)*Game.fps,-1),Game.sayTime((Game.lumpRipeAge/1000)*Game.fps,-1),Game.sayTime((Game.lumpOverripeAge/1000)*Game.fps,-1)]);
 			
-			str+='<div class="line"></div>'+loc("&bull; Soy sauce lumps can be harvested when mature, though if left alone beyond that point they will start ripening (increasing the chance of harvesting them) and will eventually fall and be auto-harvested after some time.<br>&bull; Soy sauce droplets are delicious and may be used as currency for all sorts of things.<br>&bull; Once a soy sauce droplet is harvested, another one will start growing in its place.<br>&bull; Note that soy sauce droplets keep growing when the game is closed.")+'</div>';
+			str+='<div class="line"></div>'+loc("&bull; Soy sauce droplets can be harvested when mature, though if left alone beyond that point they will start ripening (increasing the chance of harvesting them) and will eventually fall and be auto-harvested after some time.<br>&bull; Soy sauce droplets are delicious and may be used as currency for all sorts of things.<br>&bull; Once a soy sauce droplet is harvested, another one will start growing in its place.<br>&bull; Note that soy sauce droplets keep growing when the game is closed.")+'</div>';
 			return str;
 		}
 		Game.computeLumpTimes=function()
