@@ -2711,11 +2711,11 @@ Game.Launch=function()
 			(type==3?'\n	volume : ':'')+parseInt(Math.floor(Game.volume))+';'+
 			(type==3?'\n	number of shiny wrinklers : ':'')+parseInt(Math.floor(wrinklers.shinies))+';'+
 			(type==3?'\n	amount of cookies contained in shiny wrinklers : ':'')+parseFloat(Math.floor(wrinklers.amountShinies))+';'+
-			(type==3?'\n	current amount of sugar lumps : ':'')+parseFloat(Math.floor(Game.lumps))+';'+
-			(type==3?'\n	total amount of sugar lumps made : ':'')+parseFloat(Math.floor(Game.lumpsTotal))+';'+
-			(type==3?'\n	time when current sugar lump started : ':'')+parseFloat(Math.floor(Game.lumpT))+';'+
+			(type==3?'\n	current amount of soy suace droplets : ':'')+parseFloat(Math.floor(Game.lumps))+';'+
+			(type==3?'\n	total amount of soy sauce droplets made : ':'')+parseFloat(Math.floor(Game.lumpsTotal))+';'+
+			(type==3?'\n	time when current soy sauce droplets started : ':'')+parseFloat(Math.floor(Game.lumpT))+';'+
 			(type==3?'\n	time when last refilled a minigame with a sugar lump : ':'')+parseFloat(Math.floor(Game.lumpRefill))+';'+
-			(type==3?'\n	sugar lump type : ':'')+parseInt(Math.floor(Game.lumpCurrentType))+';'+
+			(type==3?'\n	soy sauce droplet type : ':'')+parseInt(Math.floor(Game.lumpCurrentType))+';'+
 			(type==3?'\n	vault : ':'')+Game.vault.join(',')+';'+
 			(type==3?'\n	heralds : ':'')+parseInt(Game.heralds)+';'+
 			(type==3?'\n	golden cookie fortune : ':'')+parseInt(Game.fortuneGC)+';'+
@@ -4103,10 +4103,10 @@ Game.Launch=function()
 		}
 		Game.Ascend=function(bypass)
 		{
-			if (!bypass) Game.Prompt('<id Ascend><h3>'+loc("Ascend")+'</h3><div class="block">'+tinyIcon([19,7])+'<div class="line"></div>'+loc("Do you REALLY want to ascend?<div class=\"line\"></div>You will lose your progress and start over from scratch.<div class=\"line\"></div>All your cookies will be converted into prestige and heavenly chips.")+'<div class="line"></div>'+(Game.canLumps()?loc("You will keep your achievements, building levels and sugar lumps."):loc("You will keep your achievements."))+'<div class="optionBox"><a class="option smallFancyButton" style="margin:16px;padding:8px 16px;animation:rainbowCycle 5s infinite ease-in-out,pucker 0.2s ease-out;box-shadow:0px 0px 0px 1px #000,0px 0px 1px 2px currentcolor;background:linear-gradient(to bottom,transparent 0%,currentColor 500%);width:auto;text-align:center;" '+Game.clickStr+'="PlaySound(\'snd/tick.mp3\');Game.ClosePrompt();Game.Ascend(1);" id="promptOption0">'+loc("Ascend")+'</a></div></div>',[[loc("Yes"),'Game.ClosePrompt();Game.Ascend(1);','float:left;display:none;'],[loc("Cancel"),0,'float:right']]);
+			if (!bypass) Game.Prompt('<id Ascend><h3>'+loc("Ascend")+'</h3><div class="block">'+tinyIcon([19,7])+'<div class="line"></div>'+loc("Do you REALLY want to ascend?<div class=\"line\"></div>You will lose your progress and start over from scratch.<div class=\"line\"></div>All your rice will be converted into prestige and heavenly chips.")+'<div class="line"></div>'+(Game.canLumps()?loc("You will keep your achievements, building levels and soy suace droplets."):loc("You will keep your achievements."))+'<div class="optionBox"><a class="option smallFancyButton" style="margin:16px;padding:8px 16px;animation:rainbowCycle 5s infinite ease-in-out,pucker 0.2s ease-out;box-shadow:0px 0px 0px 1px #000,0px 0px 1px 2px currentcolor;background:linear-gradient(to bottom,transparent 0%,currentColor 500%);width:auto;text-align:center;" '+Game.clickStr+'="PlaySound(\'snd/tick.mp3\');Game.ClosePrompt();Game.Ascend(1);" id="promptOption0">'+loc("Ascend")+'</a></div></div>',[[loc("Yes"),'Game.ClosePrompt();Game.Ascend(1);','float:left;display:none;'],[loc("Cancel"),0,'float:right']]);
 			else
 			{
-				Game.Notify(loc("Ascending"),loc("So long, cookies."),[20,7],4);
+				Game.Notify(loc("Ascending"),loc("So long, rice."),[20,7],4);
 				Game.OnAscend=0;Game.removeClass('ascending');
 				Game.addClass('ascendIntro');
 				//trigger the ascend animation
@@ -4419,9 +4419,9 @@ Game.Launch=function()
 		Game.lumpTooltip=function()
 		{
 			var str='<div style="padding:8px;width:400px;font-size:11px;text-align:center;" id="tooltipLumps">'+
-			loc("You have %1.",'<span class="price lump">'+loc("%1 sugar lump",LBeautify(Game.lumps))+'</span>')+
+			loc("You have %1.",'<span class="price lump">'+loc("%1 soy sauce droplets",LBeautify(Game.lumps))+'</span>')+
 			'<div class="line"></div>'+
-			loc("A <b>sugar lump</b> is coalescing here, attracted by your accomplishments.");
+			loc("A <b>soy sauce droplet</b> is coalescing here, attracted by your accomplishments.");
 			
 			var age=Date.now()-Game.lumpT;
 			str+='<div class="line"></div>';
