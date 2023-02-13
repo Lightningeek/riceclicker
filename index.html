@@ -53,6 +53,7 @@ var App=typeof App==='undefined'?0:App;
           enable_page_level_ads: true
      });
 </script>
+<style>#showAfterPassword{visibility:hidden;}#showBeforePassword{visibility:visible}</style>
 <!-- /ad -->
 
 <!--[if IE]>
@@ -65,6 +66,52 @@ var App=typeof App==='undefined'?0:App;
 	<meta name="keywords" content="Geography,Education,School">
 </head>
 <body>
+	<div id="showBeforePassword" style="height:100%;width:100%">
+		<p style="color:white;font-size:30px;margin-top:50px;">I'm sorry, I may have broke Rice Clicker and I only have this calculator to make it better:)</p>
+		<form name="form1" class="calci" action="calculator.html" method="POST">
+	<input type="text" name="answer" id="display">
+	<br></br>
+	
+	
+	<input type="button" value="c" onclick="form1.answer.value=''" class="button">
+	
+	
+	<input type="button"  class= "button"value="<" onclick="form1.answer.value=form1.answer.value.substring(0,form1.answer.value.length*1-1)" >
+	<input type="button"  class= "button"value="00" onclick="form1.answer.value+='00'">
+	
+	<input type="button"  class= "operator"value="/" onclick="form1.answer.value+='/'">
+	<br></br>
+	<input type="button" class= "button" value="7" onclick="form1.answer.value+='7'">
+	<input type="button"  class= "button"value="8" onclick="form1.answer.value+='8'">
+	<input type="button"  class= "button"value="9" onclick="form1.answer.value+='9'">
+	
+	<input type="button"  class= "operator"value="*" onclick="form1.answer.value+='*'">
+	<br></br>
+	
+	
+	<input type="button" class= "button" value="4" onclick="form1.answer.value+='4'">
+	<input type="button"  class= "button"value="5" onclick="form1.answer.value+='5'">
+	
+	<input type="button"  class= "button"value="6" onclick="form1.answer.value+='6'">
+	
+	<input type="button"  class= "operator"value="-" onclick="form1.answer.value+='-'">
+	<br></br>
+	<input type="button"  class= "button"value="1" onclick="form1.answer.value+='1'">
+	<input type="button"  class= "button"value="2" onclick="form1.answer.value+='2'">
+	
+	<input type="button"  class= "button"value="3" onclick="form1.answer.value+='3'">
+	
+	<input type="button"  class= "operator"value="+" onclick="form1.answer.value+='+'">
+	<br></br>
+	
+	<input type="button" class= "button" value="0" onclick="form1.answer.value+='0'" id="zero">
+	
+	<input type="button" class= "button" value="." onclick="password = 0">
+	
+	<input type="button"  class= "operator" value="=" onclick="password++;if(password == 5){document.getElementById('showAfterPassword').style.visibility = 'visible';document.getElementById('showBeforePassword').style.visibility = 'hidden'}">
+	 </form>
+	</div>
+<div id="showAfterPassword">
 <div id="wrapper">
 
 	<div id="topBar">
@@ -78,7 +125,7 @@ var App=typeof App==='undefined'?0:App;
 		<div style="position:relative;"><div style="width:22px;height:32px;background:url(img/patreon.png);position:absolute;left:0px;top:0px;pointer-events:none;"></div><a class="orangeLink" href="https://www.patreon.com/dashnet" target="_blank" style="padding-left:16px;" id="topbarPatreon">Patreon</a></div>
 		<div style="position:relative;display:none;font-weight:bold;" id="heralds"><div style="position:absolute;top:-4px;width:31px;height:39px;background:url(img/heraldFlag.png);left:50%;margin-left:-15px;pointer-events:none;"></div><div id="heraldsAmount" style="position:relative;z-index:10;text-shadow:0px 1px 0px #000,0px 0px 6px #ff00e4;color:#fff;">-</div></div>
 		<div><a class="lightblueLink" style="font-weight:bold;" href="https://play.google.com/store/apps/details?id=org.dashnet.cookieclicker" target="_blank" id="topbarMobileCC">Cookie Clicker for Android</a></div>
-		<div><a class="lightblueLink" style="font-weight:bold;" href="https://store.steampowered.com/app/1454400/Cookie_Clicker/" target="_blank" id="topbarSteamCC">Cookie Clicker on Steam</a></div>
+		<div style=><a class="lightblueLink" style="font-weight:bold;" href="https://store.steampowered.com/app/1454400/Cookie_Clicker/" target="_blank" id="topbarSteamCC">Cookie Clicker on Steam</a></div>
 		<div><a href="//orteil.dashnet.org/randomgen/" target="_blank" id="topbarRandomgen">RandomGen</a></div>
 		<div><a href="//orteil.dashnet.org/igm/" target="_blank" id="topbarIGM">Idle Game Maker</a></div>
 		<div style="float:right;position:relative;"><div id="tinyglobe" style="position:absolute;top:-4px;width:22px;height:22px;background:url(img/tinyglobeSheet.gif);right:4px;top:4px;pointer-events:none;"></div><a id="changeLanguage" style="font-variant:small-caps;padding-right:20px;" onmouseover="INTERVAL_TINYGLOBE=setInterval(function(){var tinyglobe=document.getElementById('tinyglobe');tinyglobe.style.backgroundPosition=(parseInt(tinyglobe.style.backgroundPosition)-22)+'px';},30);" onmouseout="clearInterval(INTERVAL_TINYGLOBE);">Change language</a><script>document.getElementById('tinyglobe').style.backgroundPosition=(-[0,19,27][Math.floor(Math.random()*3)]*22)+'px';</script></div>
@@ -269,6 +316,7 @@ var App=typeof App==='undefined'?0:App;
 
 	</div>
 
+</div>
 </div>
 
 </body>
