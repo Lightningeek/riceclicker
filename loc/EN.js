@@ -1936,7 +1936,7 @@ AddLanguage('EN','english',{
 	"[Upgrade name 62]Altered grandmas": "Altered grandmas",
 	"[Upgrade name 63]Grandmas' grandmas": "Grandmas' grandmas",
 	"[Upgrade name 64]Bingo center/Research facility": "Bingo center/Research facility",
-	"[Upgrade name 65]Specialized chocolate chips": "Specialized chocolate chips",
+	"[Upgrade name 65]Specialized rice grains": "Specialized rice grains",
 	"[Upgrade name 66]Designer cocoa beans": "Designer cocoa beans",
 	"[Upgrade name 67]Ritual rolling pins": "Ritual rolling pins",
 	"[Upgrade name 68]Underworld ovens": "Underworld ovens",
