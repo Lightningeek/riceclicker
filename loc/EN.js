@@ -969,14 +969,14 @@ AddLanguage('EN','english',{
 	"[Mine quote]Mines out rice from the depths of asia.": "Mines rice from the depths of asia.",
 	"[Mine business name]Secret recipe": "Secret recipe",
 	"[Mine business quote]These give you the edge you need to outsell those pesky competitors.": "These give you the edge you need to outsell those pesky competitors.",
-	"Factory": "/",
-	"factory": "/",
-	"factories": "/",
-	"%1 factory": [
-		"%1 factory",
-		"%1 factories"
+	"Humane Sweat Shop": "/",
+	"Humane Sweat Shop": "/",
+	"Humane Sweat Shops": "/",
+	"%1 Humane sweat shop": [
+		"%1 Humane sweat shop",
+		"%1 Humane sweat shops"
 	],
-	"[Factory quote]Produces industrial quantities of rice cookers.": "Produces industrial quantities of rice cookers.",
+	"[Factory quote]It IS humane gayleb.": "It IS humane gayleb.",
 	"[Factory business name]Factory": "Factory",
 	"[Factory business quote]Mass production is the future of baking. Seize the day, and synergize!": "Mass production is the future of baking. Seize the day, and synergize!",
 	"Bank": "/",
