@@ -9727,7 +9727,7 @@ Game.Launch=function()
 		new Game.Upgrade('Bingo center/Research facility',loc("Grandma-operated science lab and leisure club.<br>Grandmas are <b>4 times</b> as efficient.<br><b>Regularly unlocks new upgrades</b>.")+'<q>What could possibly keep those grandmothers in check?...<br>Bingo.</q>',1000000000000000,[11,9],function(){Game.SetResearch('Specialized chocolate chips');});Game.last.noPerm=1;
 		
 		order=15000;
-		new Game.Upgrade('Specialized chocolate chips',getStrCookieProductionMultiplierPlus(1)+'<q>Computer-designed chocolate chips. Computer chips, if you will.</q>',1000000000000000,[0,9],function(){Game.SetResearch('Designer cocoa beans');});Game.last.pool='tech';
+		new Game.Upgrade('Specialized chocolate chips',getStrCookieProductionMultiplierPlus(1)+'<q>Computer-designed rice grains, comes in gold, silver, and bronze. Computer chips, if you will.</q>',1000000000000000,[0,9],function(){Game.SetResearch('Designer cocoa beans');});Game.last.pool='tech';
 		new Game.Upgrade('Designer cocoa beans',getStrCookieProductionMultiplierPlus(2)+'<q>Now more aerodynamic than ever!</q>',2000000000000000,[1,9],function(){Game.SetResearch('Ritual rolling pins');});Game.last.pool='tech';
 		new Game.Upgrade('Ritual rolling pins',loc("%1 are <b>twice</b> as efficient.",cap(Game.Objects['Grandma'].plural))+'<q>The result of years of scientific research!</q>',4000000000000000,[2,9],function(){Game.SetResearch('Underworld ovens');});Game.last.pool='tech';
 		new Game.Upgrade('Underworld ovens',getStrCookieProductionMultiplierPlus(3)+'<q>Powered by science, of course!</q>',8000000000000000,[3,9],function(){Game.SetResearch('One mind');});Game.last.pool='tech';
