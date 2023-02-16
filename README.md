@@ -9,6 +9,8 @@ This mirror for, errrr, like, educational purpose, either to download for your o
 Lightningeeks note: If you a clueless dumbass like me you just have to donwload the zip, extract all, and then go to the index.html open and then there
 it works now and you can play rice clicker
 
+also, orteil please dont sue us we just wanted to make a fun game and all patreon links still go to your patreon
+
 ### How to update
 
 If the original game updates, here is how you can update the mirror:
