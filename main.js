@@ -8848,7 +8848,7 @@ Game.Launch=function()
 			if (this.amount>=Game.SpecialGrandmaUnlock && Game.Objects['Grandma'].amount>0) Game.Unlock(this.grandma.name);
 		});
 		
-		new Game.Object('Alchemy lab','alchemy lab|alchemy labs|transmuted|[X] primordial element mastered|[X] primordial elements mastered','Turns gold into cookies!',10,6,{base:'alchemylab',xV:16,yV:16,w:64,rows:2,x:0,y:16},200000,function(me){
+		new Game.Object('Alchemy lab','alchemy lab|alchemy labs|transmuted|[X] primordial element mastered|[X] primordial elements mastered','Turns gold into rice!',10,6,{base:'alchemylab',xV:16,yV:16,w:64,rows:2,x:0,y:16},200000,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			mult*=Game.magicCpS(me.name);
@@ -9632,8 +9632,8 @@ Game.Launch=function()
 		
 		order=700;
 		Game.TieredUpgrade('Antimony','<q>Actually worth a lot of mony.</q>','Alchemy lab',1);
-		Game.TieredUpgrade('Essence of dough','<q>Extracted through the 5 ancient steps of alchemical baking.</q>','Alchemy lab',2);
-		Game.TieredUpgrade('True chocolate','<q>The purest form of cacao.</q>','Alchemy lab',3);
+		Game.TieredUpgrade('Essence of dough','<q>Extracted through the 5 ancient steps of alchemical cooking.</q>','Alchemy lab',2);
+		Game.TieredUpgrade('True chocolate','<q>The purest form of white rice.</q>','Alchemy lab',3);
 		
 		order=800;
 		Game.TieredUpgrade('Ancient tablet','<q>A strange slab of peanut brittle, holding an ancient cookie recipe. Neat!</q>','Portal',1);
@@ -9672,13 +9672,13 @@ Game.Launch=function()
 		order=500;Game.TieredUpgrade('Radium reactors','<q>Gives your cookies a healthy glow.</q>','Factory',4);
 		order=400;Game.TieredUpgrade('Ultimadrill','<q>Pierce the heavens, etc.</q>','Mine',4);
 		order=600;Game.TieredUpgrade('Warp drive','<q>To boldly bake.</q>','Shipment',4);
-		order=700;Game.TieredUpgrade('Ambrosia','<q>Adding this to the cookie mix is sure to make them even more addictive!<br>Perhaps dangerously so.<br>Let\'s hope you can keep selling these legally.</q>','Alchemy lab',4);
+		order=700;Game.TieredUpgrade('Ambrosia','<q>Adding this to the rice is sure to make them even more addictive than meth!<br>Perhaps dangerously so.<br>Let\'s hope you can keep selling these legally.</q>','Alchemy lab',4);
 		order=800;Game.TieredUpgrade('Sanity dance','<q>We can change if we want to.<br>We can leave our brains behind.</q>','Portal',4);
 		order=900;Game.TieredUpgrade('Causality enforcer','<q>What happened, happened.</q>','Time machine',4);
 		
 		order=5000;
-		new Game.Upgrade('Lucky day',loc("Golden cookies appear <b>twice as often</b> and stay <b>twice as long</b>.")+'<q>Oh hey, a four-leaf penny!</q>',777777777,[27,6]);
-		new Game.Upgrade('Serendipity',loc("Golden cookies appear <b>twice as often</b> and stay <b>twice as long</b>.")+'<q>What joy! Seven horseshoes!</q>',77777777777,[27,6]);
+		new Game.Upgrade('Lucky day',loc("Good Grades appear <b>twice as often</b> and stay <b>twice as long</b>.")+'<q>Oh hey, a four-leaf penny!</q>',777777777,[27,6]);
+		new Game.Upgrade('Serendipity',loc("Good Grades appear <b>twice as often</b> and stay <b>twice as long</b>.")+'<q>What joy! Seven horseshoes!</q>',77777777777,[27,6]);
 		
 		order=20000;
 		new Game.Upgrade('Kitten engineers',strKittenDesc+'<q>meow meow meow meow, sir</q>',90000000000000,Game.GetIcon('Kitten',3));Game.last.kitten=1;Game.MakeTiered(Game.last,3,18);
@@ -9706,7 +9706,7 @@ Game.Launch=function()
 		Game.GrandmaSynergy('Miner grandmas','A nice miner to dig more cookies.','Mine');
 		Game.GrandmaSynergy('Worker grandmas','A nice worker to manufacture more cookies.','Factory');
 		Game.GrandmaSynergy('Cosmic grandmas','A nice thing to... uh... cookies.','Shipment');
-		Game.GrandmaSynergy('Transmuted grandmas','A nice golden grandma to convert into more cookies.','Alchemy lab');
+		Game.GrandmaSynergy('Transmuted grandpas','一个漂亮的金爷爷可以变成更多的饼干.','Alchemy lab');
 		Game.GrandmaSynergy('Altered grandmas','a NiCe GrAnDmA tO bA##########','Portal');
 		Game.GrandmaSynergy('Grandmas\' grandmas','A nice grandma\'s nice grandma to bake double the cookies.','Time machine');
 		
@@ -9851,7 +9851,7 @@ Game.Launch=function()
 		order=500;Game.TieredUpgrade('Recombobulators','<q>A major part of cookie recombobulation.</q>','Factory',5);
 		order=400;Game.TieredUpgrade('H-bomb mining','<q>Questionable efficiency, but spectacular nonetheless.</q>','Mine',5);
 		order=600;Game.TieredUpgrade('Chocolate monoliths','<q>My god. It\'s full of chocolate bars.</q>','Shipment',5);
-		order=700;Game.TieredUpgrade('Aqua crustulae','<q>Careful with the dosing - one drop too much and you get muffins.<br>And nobody likes muffins.</q>','Alchemy lab',5);
+		order=700;Game.TieredUpgrade('Aqua crustulae','<q>Careful with the dosing - one drop too much and you get brown rice.<br>And nobody likes brown rice.</q>','Alchemy lab',5);
 		order=800;Game.TieredUpgrade('Brane transplant','<q>This refers to the practice of merging higher dimensional universes, or "branes", with our own, in order to facilitate transit (and harvesting of precious cookie dough).</q>','Portal',5);
 		order=900;Game.TieredUpgrade('Yestermorrow comparators','<q>Fortnights into millennia.</q>','Time machine',5);
 		order=1000;Game.TieredUpgrade('Reverse cyclotrons','<q>These can uncollision particles and unspin atoms. For... uh... better flavor, and stuff.</q>','Antimatter condenser',5);
@@ -10021,7 +10021,7 @@ Game.Launch=function()
 		order=500;Game.TieredUpgrade('Deep-bake process','<q>A patented process increasing cookie yield two-fold for the same amount of ingredients. Don\'t ask how, don\'t take pictures, and be sure to wear your protective suit.</q>','Factory',6);
 		order=400;Game.TieredUpgrade('Coreforge','<q>You\'ve finally dug a tunnel down to the Earth\'s core. It\'s pretty warm down here.</q>','Mine',6);
 		order=600;Game.TieredUpgrade('Generation ship','<q>Built to last, this humongous spacecraft will surely deliver your cookies to the deep ends of space, one day.</q>','Shipment',6);
-		order=700;Game.TieredUpgrade('Origin crucible','<q>Built from the rarest of earths and located at the very deepest of the largest mountain, this legendary crucible is said to retain properties from the big-bang itself.</q>','Alchemy lab',6);
+		order=700;Game.TieredUpgrade('Origin crucible','<q>Built from the rarest of asians and located at the very deepest of the largest report card, this legendary rice cooker is said to retain properties from the big-bang itself.</q>','Alchemy lab',6);
 		order=800;Game.TieredUpgrade('Deity-sized portals','<q>It\'s almost like, say, an elder god could fit through this thing now. Hypothetically.</q>','Portal',6);
 		order=900;Game.TieredUpgrade('Far future enactment','<q>The far future enactment authorizes you to delve deep into the future - where civilization has fallen and risen again, and cookies are plentiful.</q>','Time machine',6);
 		order=1000;Game.TieredUpgrade('Nanocosmics','<q>The theory of nanocosmics posits that each subatomic particle is in fact its own self-contained universe, holding unfathomable amounts of energy.<br>This somehow stacks with the nested universe theory, because physics.</q>','Antimatter condenser',6);
