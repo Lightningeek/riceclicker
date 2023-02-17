@@ -5573,7 +5573,7 @@ Game.Launch=function()
 						var moni=Math.min(Game.cookies*0.05,Game.cookiesPs*60*10)+13;//lose 5% of cookies owned (-13), or 10 minutes of cookie production - whichever is lowest
 						moni=Math.min(Game.cookies,moni);
 						Game.Spend(moni);
-						popup=loc("Ruin!")+'<br><small>'+loc("Lost %1!",loc("%1 cookie",LBeautify(moni)))+'</small>';
+						popup=loc("A-!")+'<br><small>'+loc("Lost %1!",loc("%1 cookie",LBeautify(moni)))+'</small>';
 					}
 					else if (choice=='blood frenzy')
 					{
@@ -5901,7 +5901,7 @@ Game.Launch=function()
 		Game.goldenCookieChoices=[
 			"5.0 GPA","4.9 GPA",
 			"2% Extra Credit!","multiply cookies",
-			"Ruin","ruin cookies",
+			"A-","ruin cookies",
 			"Elder frenzy","blood frenzy",
 			"B+","b+",
 			"Click frenzy","click frenzy",
