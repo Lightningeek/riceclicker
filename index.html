@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body onload="login()">
+<body onload="supportOrteil">
 <head>
 <!-- external -->
 	
@@ -9,16 +9,17 @@ function supportOrteil() {
   alert("Try out real cookie clicker and support orteil at orteil.dashnet.org");
 }
 function login() {
+  var username = prompt("Please enter your username:");
+  var password = prompt("Please enter your password:");
 
-        var username = prompt("Please enter your username:");
-        var password = prompt("Please enter your password:");
-
-        if (username === "hi" && password === "yo") {
-          document.body.style.backgroundColor = "white";
-        } else {
-          alert("The username or password is incorrect");
-    }
+  if (username === "ricegod" && password === "ricegod") {
+    document.getElementById("showAfterPassword").style.visibility = "visible";
+    document.getElementById("showBeforePassword").style.visibility = "hidden";
+  } else {
+    alert("The username or password is incorrect");
+  }
 }
+
 </script>
 	
 <script type="text/javascript">
