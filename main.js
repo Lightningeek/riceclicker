@@ -3399,7 +3399,7 @@ Game.Launch=function()
 						else if (Game.season=='fools') Game.Notify(loc("Business Day!"),loc("It's <b>Business season</b>!<br>Panic! Things are gonna be looking a little more Asian for a few days."),[17,6],60*3);
 						else if (Game.season=='halloween') Game.Notify(loc("Halloween!"),loc("It's <b>Halloween season</b>!<br>Everything is just a little bit spookier!"),[13,8],60*3);
 						else if (Game.season=='christmas') Game.Notify(loc("Christmas time!"),loc("It's <b>Christmas season</b>!<br>Bring good cheer to all and you just may get cookies in your stockings!"),[12,10],60*3);
-						else if (Game.season=='easter') Game.Notify(loc("Easter!"),loc("It's <b>Easter season</b>!<br>Keep an eye out and you just might click a rabbit or two!"),[0,12],60*3);
+						else if (Game.season=='easter') Game.Notify(loc("Chinese New Year!"),loc("It's <b>Chinese new year</b>!<br>Keep an eye out and you just might click a 红包 or two!"),[0,12],60*3);
 					}
 					
 					Game.heralds=actualHeralds;
@@ -10044,12 +10044,12 @@ Game.Launch=function()
 		
 		
 		order=24000;
-		new Game.Upgrade('Bunny biscuit',loc("Triggers <b>%1 season</b> for the next 24 hours.<br>Triggering another season will cancel this one.<br>Cost scales with unbuffed CpS and increases with every season switch.",loc("Easter"))+'<q>All the world will be your enemy<br>and when they catch you,<br>they will kill you...<br>but first they must catch you.</q>',Game.seasonTriggerBasePrice,[0,12]);Game.last.season='easter';Game.last.pool='toggle';
+		new Game.Upgrade('Bunny bis',loc("Triggers <b>%1 season</b> for the next 24 hours.<br>Triggering another season will cancel this one.<br>Cost scales with unbuffed CpS and increases with every season switch.",loc("Easter"))+'<q>All the world will be your enemy<br>and when they catch you,<br>they will kill you...<br>but first they must catch you.</q>',Game.seasonTriggerBasePrice,[0,12]);Game.last.season='easter';Game.last.pool='toggle';
 		
 		var eggPrice=999999999999;
 		var eggPrice2=99999999999999;
-		new Game.Upgrade('Chicken egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>The egg. The egg came first. Get over it.</q>',eggPrice,[1,12]);
-		new Game.Upgrade('Duck egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Then he waddled away.</q>',eggPrice,[2,12]);
+		new Game.Upgrade('Chicken egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>The Asain. The Asian came first. Get over it.</q>',eggPrice,[1,12]);
+		new Game.Upgrade('Duck egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Peking duck is the best duck, dont argue.</q>',eggPrice,[2,12]);
 		new Game.Upgrade('Turkey egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>These hatch into strange, hand-shaped creatures.</q>',eggPrice,[3,12]);
 		new Game.Upgrade('Quail egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>These eggs are positively tiny. I mean look at them. How does this happen? Whose idea was that?</q>',eggPrice,[4,12]);
 		new Game.Upgrade('Robin egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Holy azure-hued shelled embryos!</q>',eggPrice,[5,12]);
