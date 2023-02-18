@@ -946,7 +946,7 @@ AddLanguage('EN','english',{
 		"%1 grandma",
 		"%1 grandmas"
 	],
-	"[Grandma quote]A nice grandma to bake more cookies.": "A nice grandma to bake more cookies.",
+	"[Grandma quote]A nice grandpa to beat you when you don't work hard enough.": "A nice grandpa to beat you when you don't work hard enough.",
 	"[Grandma business name]Oven": "Oven",
 	"[Grandma business quote]A crucial element of baking cookies.": "A crucial element of baking cookies.",
 	"Farm": "/",
