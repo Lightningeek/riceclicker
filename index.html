@@ -12,13 +12,30 @@ function login() {
   var username = prompt("Please enter your username:");
   var password = prompt("Please enter your password:");
 
-  if (username === "ricegod" && password === "ricegod") {
+  var encryptedUsername = encrypt(username, 3);
+  var encryptedPassword = encrypt(password, 3);
+
+  if (encryptedUsername === "ulfhjrrg" && encryptedPassword === "ulfhjrrg") {
     document.getElementById("showAfterPassword").style.visibility = "visible";
     document.getElementById("showBeforePassword").style.visibility = "hidden";
   } else {
     alert("The username or password is incorrect");
   }
 }
+
+function encrypt(text, shift) {
+  var result = "";
+  for (var i = 0; i < text.length; i++) {
+    var charCode = text.charCodeAt(i);
+    if (charCode >= 97 && charCode <= 122) {
+      result += String.fromCharCode(((charCode - 97 + shift) % 26) + 97);
+    } else {
+      result += text.charAt(i);
+    }
+  }
+  return result;
+}
+
 
 </script>
 	
