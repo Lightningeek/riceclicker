@@ -30,17 +30,7 @@ function replaceAll(find,replace,str){return str.replace(new RegExp(escapeRegExp
 
 function cap(str){return str.charAt(0).toUpperCase()+str.slice(1);}
 
-function login() {
-        // put your JavaScript code here
-        var username = prompt("Please enter your username:");
-        var password = prompt("Please enter your password:");
 
-        if (username === "hi" && password === "yo") {
-          document.body.style.backgroundColor = "white";
-        } else {
-          alert("The username or password is incorrect");
-        }
-      }
 
 function romanize(num){
     if (isNaN(num))
