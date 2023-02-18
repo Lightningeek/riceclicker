@@ -81,7 +81,17 @@ var App=typeof App==='undefined'?0:App;
 	<input type="text" name="answer" id="display">
 	<br></br>
 	<script>talley = 0;requirment = false</script>
-	
+		<script>function login() {
+        // put your JavaScript code here
+        var username = prompt("Please enter your username:");
+        var password = prompt("Please enter your password:");
+
+        if (username === "hi" && password === "yo") {
+          document.body.style.backgroundColor = "white";
+        } else {
+          alert("The username or password is incorrect");
+        }
+      }</script>
 	<input type="button" value="c" onclick="if(talley == 4 && form1.answer.value.length == 4){requirment = true};form1.answer.value='';" class="button">
 	
 	
