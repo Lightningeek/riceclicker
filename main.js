@@ -5721,7 +5721,7 @@ Game.Launch=function()
 					//if (Game.hasAura('Arcane Aura')) m*=0.95;
 					m*=1-Game.auraMult('Arcane Aura')*0.05;
 					if (Game.hasBuff('Sugar blessing')) m*=0.9;
-					if (Game.season=='easter' && Game.Has('Starspawn')) m*=0.98;
+					if (Game.season=='easter' && Game.Has('redenvelope')) m*=0.98;
 					else if (Game.season=='halloween' && Game.Has('Starterror')) m*=0.98;
 					else if (Game.season=='valentines' && Game.Has('Sushilove')) m*=0.98;
 					else if (Game.season=='fools' && Game.Has('Startrade')) m*=0.95;
@@ -10123,7 +10123,7 @@ Game.Launch=function()
 				}
 				if (Game.Has(drop) || Game.HasUnlocked(drop)) return;
 				Game.Unlock(drop);
-				Game.Notify(loc("You found an egg!"),'<b>'+drop+'</b>',Game.Upgrades[drop].icon);
+				Game.Notify(loc("You found an 红包!"),'<b>'+drop+'</b>',Game.Upgrades[drop].icon);
 			}
 		};
 		
@@ -10885,7 +10885,7 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'Bourbon biscuits',desc:'Two chocolate biscuits joined together with even more chocolate.<br>The sworn rivals of custard creams, as legend has it.',icon:[24,29],power:						4,price: 99999999999999999999999999999999999999});
 		
 		
-		new Game.Upgrade('Keepsakes',loc("Seasonal random drops have a <b>1/5 chance</b> to carry over through ascensions.")+'<q>Cherish the memories.</q>',1111111111,[22,29]);Game.last.pool='prestige';Game.last.parents=['Starsnow','Sushilove','Starterror','Startrade','Starspawn'];
+		new Game.Upgrade('Keepsakes',loc("Seasonal random drops have a <b>1/5 chance</b> to carry over through ascensions.")+'<q>Cherish the memories.</q>',1111111111,[22,29]);Game.last.pool='prestige';Game.last.parents=['Starsnow','Sushilove','Starterror','Startrade','redenvelope'];
 		
 		order=10020;
 		Game.NewUpgradeCookie({name:'Mini-cookies',desc:'Have you ever noticed how the smaller something is, the easier it is to binge on it?',icon:[29,30],power:						5,price: 99999999999999999999999999999999999999*5});
