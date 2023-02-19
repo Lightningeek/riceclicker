@@ -10044,7 +10044,7 @@ Game.Launch=function()
 		
 		
 		order=24000;
-		new Game.Upgrade('Bunny bis',loc("Triggers <b>%1 season</b> for the next 24 hours.<br>Triggering another season will cancel this one.<br>Cost scales with unbuffed CpS and increases with every season switch.",loc("Easter"))+'<q>All the world will be your enemy<br>and when they catch you,<br>they will kill you...<br>but first they must catch you.</q>',Game.seasonTriggerBasePrice,[0,12]);Game.last.season='easter';Game.last.pool='toggle';
+		new Game.Upgrade('Bunny biscuit',loc("Triggers <b>%1 season</b> for the next 24 hours.<br>Triggering another season will cancel this one.<br>Cost scales with unbuffed CpS and increases with every season switch.",loc("Easter"))+'<q>All the world will be your enemy<br>and when they catch you,<br>they will kill you...<br>but first they must catch you.</q>',Game.seasonTriggerBasePrice,[0,12]);Game.last.season='easter';Game.last.pool='toggle';
 		
 		var eggPrice=999999999999;
 		var eggPrice2=99999999999999;
