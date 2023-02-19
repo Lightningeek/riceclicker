@@ -10250,7 +10250,7 @@ Game.Launch=function()
 			l('upgradeToSlotWrap').innerHTML=(Game.crate(Game.UpgradesById[upgrade==-1?0:upgrade],'','','upgradeToSlot'));
 		}
 		
-		new Game.Upgrade('Starspawn',loc("Eggs drop <b>%1%</b> more often.",10)+'<br>'+loc("Golden cookies appear <b>%1%</b> more often during %2.",[2,loc("Easter")]),111111,[0,12]);Game.last.pool='prestige';Game.last.parents=['Season switcher'];
+		new Game.Upgrade('redenvelope',loc("红包 drop <b>%1%</b> more often.",10)+'<br>'+loc("Golden cookies appear <b>%1%</b> more often during %2.",[2,loc("Easter")]),111111,[0,12]);Game.last.pool='prestige';Game.last.parents=['Season switcher'];
 		new Game.Upgrade('Starsnow',loc("Christmas cookies drop <b>%1%</b> more often.",5)+'<br>'+loc("Reindeer appear <b>%1%</b> more often.",5),111111,[12,9]);Game.last.pool='prestige';Game.last.parents=['Season switcher'];
 		new Game.Upgrade('Starterror',loc("Spooky cookies drop <b>%1%</b> more often.",10)+'<br>'+loc("Golden cookies appear <b>%1%</b> more often during %2.",[2,loc("Halloween")]),111111,[13,8]);Game.last.pool='prestige';Game.last.parents=['Season switcher'];
 		new Game.Upgrade('Sushilove',loc("Rainbow Sushi Rolls are <b>%1%</b> more powerful.",50)+'<br>'+loc("Golden A++++s appear <b>%1%</b> more often during %2.",[2,loc("Valentine's day")]),111111,[20,3]);Game.last.pool='prestige';Game.last.parents=['Season switcher'];
@@ -12225,8 +12225,8 @@ Game.Launch=function()
 		order=22400;
 		new Game.Achievement('The hunt is on',loc("Unlock <b>1 egg</b>."),[1,12]);
 		new Game.Achievement('Egging on',loc("Unlock <b>%1 eggs</b>.",7),[4,12]);
-		new Game.Achievement('Mass Easteria',loc("Unlock <b>%1 eggs</b>.",14),[7,12]);
-		new Game.Achievement('Hide & seek champion',loc("Unlock <b>all the eggs</b>.<div class=\"line\"></div>Owning this achievement makes eggs drop more frequently in future playthroughs."),[13,12]);
+		new Game.Achievement('Mass 红包',loc("Unlock <b>%1 红包</b>.",14),[7,12]);
+		new Game.Achievement('Hide & seek champion',loc("Unlock <b>all the 红包</b>.<div class=\"line\"></div>Owning this achievement makes 红包 drop more frequently in future playthroughs."),[13,12]);
 	
 		order=11000;
 		new Game.Achievement('What\'s in a name',loc("Give your bakery a name."),[15,9]);
