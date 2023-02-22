@@ -30,7 +30,7 @@ M.launch=function()
 				mature:35,
 				children:['bakerWheat','thumbcorn','cronerice','bakeberry','clover','goldenClover','chocoroot','tidygrass'],
 				effsStr:'<div class="green">&bull; +1% CpS</div>',
-				q:'A plentiful crop whose hardy grain is used to make flour for pastries.',
+				q:'A plentiful crop whose hardy grain is converted into rice flour for glutinous rice cakes.',
 				onHarvest:function(x,y,age)
 				{
 					if (age>=this.mature) M.dropUpgrade('Wheat slims',0.001);
@@ -58,7 +58,7 @@ M.launch=function()
 				mature:55,
 				children:['thumbcorn','gildmillet','elderwort','wardlichen'],
 				effsStr:'<div class="green">&bull; +3% grandma CpS</div>',
-				q:'Not only does this wrinkly bulb look nothing like rice, it\'s not even related to it either; its closest extant relative is the weeping willow.',
+				q:'Not only does this wrinkly bulb look nothing like rice, it\'s also a disappointment; its closest extant relative is the weeping willow.',
 			},
 			'gildmillet':{
 				name:'Gildmillet',
@@ -70,7 +70,7 @@ M.launch=function()
 				mature:40,
 				children:['clover','goldenClover','shimmerlily'],
 				effsStr:'<div class="green">&bull; +1% golden cookie gains</div><div class="green">&bull; +0.1% golden cookie effect duration</div>',
-				q:'An ancient staple crop, famed for its golden sheen. Was once used to bake birthday cakes for kings and queens of old.',
+				q:'An ancient staple crop, famed for its gpa boosting powers. Was once used to bake birthday cakes for the emperors and empress of old.',
 			},
 			'clover':{
 				name:'Ordinary clover',
@@ -82,7 +82,7 @@ M.launch=function()
 				mature:35,
 				children:['goldenClover','greenRot','shimmerlily'],
 				effsStr:'<div class="green">&bull; +1% golden cookie frequency</div>',
-				q:'<i>Trifolium repens</i>, a fairly mundane variety of clover with a tendency to produce four leaves. Such instances are considered lucky by some.',
+				q:'<i>Trifolium repens</i>, a fairly mundane variety of clover with a tendency to produce four leaves. Lgend says that getting one will grant good grades.',
 			},
 			'goldenClover':{
 				name:'Golden clover',

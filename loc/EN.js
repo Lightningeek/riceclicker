@@ -4,7 +4,7 @@ AddLanguage('EN','english',{
 		"plural-forms": "nplurals=2;plural=(n!=1);"
 	},
 	"rice": "/",
-	"sugar lump": "/",
+	"rice lump": "/",
 	"heavenly grain": "/",
 	"wrinkler": "/",
 	"building": "/",
@@ -15,9 +15,9 @@ AddLanguage('EN','english',{
 		"%1 rice",
 		"%1 rice"
 	],
-	"%1 sugar lump": [
-		"%1 sugar lump",
-		"%1 sugar lumps"
+	"%1 soy sauce droplet": [
+		"%1 soy sauce droplet",
+		"%1 soy sauce droplets"
 	],
 	"%1 heavenly grain": [
 		"%1 heavenly grain",
@@ -104,8 +104,8 @@ AddLanguage('EN','english',{
 	"Numbers": "/",
 	"numbers that pop up when clicking the cookie": "/",
 	"Milk [setting]": "Milk",
-	"Cursors [setting]": "Cursors",
-	"visual display of your cursors": "/",
+	"Cursors [setting]": "Chopsticks",
+	"visual display of your chopsticks": "/",
 	"Wobbly cookie": "/",
 	"Alt cookie sound": "/",
 	"Icon crates": "/",
@@ -271,7 +271,7 @@ AddLanguage('EN','english',{
 	"Sorry, you can't import saves from the classic version.": "/",
 	"Wipe save": "/",
 	"Delete all your progress, including your achievements": "/",
-	"Do you REALLY want to wipe your save?<br><small>You will lose your progress, your achievements, and your heavenly chips!</small>": "/",
+	"Do you REALLY want to wipe your save?<br><small>You will lose your progress, your achievements, and your heavenly grains!</small>": "/",
 	"Whoah now, are you really, <b><i>REALLY</i></b> sure you want to go through with this?<br><small>Don't say we didn't warn you!</small>": "/",
 	"Game reset": "/",
 	"Good bye, cookies.": "/",
@@ -929,7 +929,7 @@ AddLanguage('EN','english',{
 	"You can also press %1 to bulk-buy or sell %2 of a building at a time, or %3 for %4.": "/",
 	"Investment": "/",
 	"You're not sure what this does, you just know it means profit.": "/",
-	"Cursor": "/",
+	"Chopsticks": "/",
 	"cursor": "/",
 	"cursors": "/",
 	"%1 cursor": [
@@ -2001,7 +2001,7 @@ AddLanguage('EN','english',{
 	"[Upgrade name 127]Jaffa cakes": "Jaffa cakes",
 	"[Upgrade name 128]Grease's cups": "Grease's cups",
 	"[Upgrade name 129]Heavenly chip secret": "Heavenly chip secret",
-	"[Upgrade name 130]Heavenly cookie stand": "Heavenly cookie stand",
+	"[Upgrade name 130]Heavenly sushi stand": "Heavenly sushi stand",
 	"[Upgrade name 131]Heavenly bakery": "Heavenly bakery",
 	"[Upgrade name 132]Heavenly confectionery": "Heavenly confectionery",
 	"[Upgrade name 133]Heavenly key": "Heavenly key",
@@ -2080,12 +2080,12 @@ AddLanguage('EN','english',{
 	"[Upgrade name 206]Hazelnut macarons": "Hazelnut macarons",
 	"[Upgrade name 207]Violet macarons": "Violet macarons",
 	"[Upgrade name 208]Magic shenanigans": "Magic shenanigans",
-	"[Upgrade name 209]Bunny biscuit": "Bunny biscuit",
-	"[Upgrade name 210]Chicken egg": "Chicken egg",
-	"[Upgrade name 211]Duck egg": "Duck egg",
-	"[Upgrade name 212]Turkey egg": "Turkey egg",
-	"[Upgrade name 213]Quail egg": "Quail egg",
-	"[Upgrade name 214]Robin egg": "Robin egg",
+	"[Upgrade name 209]Red Envelope": "Red Envelope",
+	"[Upgrade name 210]Costco Egg Carton Gift Card": "Costco Egg Carton Gift Card",
+	"[Upgrade name 211]Free Pekking Duck Gift Card": "Free Pekking Duck Gift Card",
+	"[Upgrade name 212]American Diner Gift Card": "American Diner Gift Card",
+	"[Upgrade name 213]Uwajimaya Gift Card": "Uwajimaya Gift Card",
+	"[Upgrade name 214]20% Off Robin Egg Coupon at pet store": "20% Off Robin Egg Coupon at pet store",
 	"[Upgrade name 215]Ostrich egg": "Ostrich egg",
 	"[Upgrade name 216]Cassowary egg": "Cassowary egg",
 	"[Upgrade name 217]Salmon roe": "Salmon roe",

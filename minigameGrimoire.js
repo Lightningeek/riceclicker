@@ -11,9 +11,9 @@ M.launch=function()
 		
 		M.spells={
 			'conjure baked goods':{
-				name:'Conjure Baked Goods',
-				desc:'Summon half an hour worth of your CpS, capped at 15% of your cookies owned.',
-				failDesc:'Trigger a 15-minute clot and lose 15 minutes of CpS.',
+				name:'Conjure Rice',
+				desc:'Summon half an hour worth of your RpS, capped at 15% of the rice you have.',
+				failDesc:'Trigger a 15-minute clot and lose 15 minutes of RpS.',
 				icon:[21,11],
 				costMin:2,
 				costPercent:0.4,
@@ -21,7 +21,7 @@ M.launch=function()
 				{
 					var val=Math.max(7,Math.min(Game.cookies*0.15,Game.cookiesPs*60*30));
 					Game.Earn(val);
-					Game.Notify('Conjure baked goods!','You magic <b>'+Beautify(val)+' cookie'+(val==1?'':'s')+'</b> out of thin air.',[21,11],6);
+					Game.Notify('Conjure baked goods!','You magic <b>'+Beautify(val)+' rice grain'+(val==1?'':'s')+'</b> out of thin air.',[21,11],6);
 					Game.Popup('<div style="font-size:80%;">+'+Beautify(val)+' cookie'+(val==1?'':'s')+'!</div>',Game.mouseX,Game.mouseY);
 				},
 				fail:function()
@@ -31,7 +31,7 @@ M.launch=function()
 					val=Math.min(Game.cookies,val);
 					Game.Spend(val);
 					Game.Notify(buff.name,buff.desc,buff.icon,6);
-					Game.Popup('<div style="font-size:80%;">Backfire!<br>Summoning failed! Lost '+Beautify(val)+' cookie'+(val==1?'':'s')+'!</div>',Game.mouseX,Game.mouseY);
+					Game.Popup('<div style="font-size:80%;">Backfire!<br>Summoning failed! Lost '+Beautify(val)+' rice grain'+(val==1?'':'s')+'!</div>',Game.mouseX,Game.mouseY);
 				},
 			},
 			'hand of fate':{
@@ -61,7 +61,7 @@ M.launch=function()
 					{
 						newShimmer.sizeMult=Math.random()*0.75+0.25;
 					}
-					Game.Popup('<div style="font-size:80%;">Promising fate!</div>',Game.mouseX,Game.mouseY);
+					Game.Popup('<div style="font-size:80%;">Promising Grade!</div>',Game.mouseX,Game.mouseY);
 				},
 				fail:function()
 				{
@@ -113,7 +113,7 @@ M.launch=function()
 			},
 			'spontaneous edifice':{
 				name:'Spontaneous Edifice',
-				desc:'The spell picks a random building you could afford if you had twice your current cookies, and gives it to you for free. The building selected must be under 400, and cannot be your most-built one (unless it is your only one).',
+				desc:'The spell picks a random building you could afford if you had twice your current rice, and gives it to you for free. The building selected must be under 400, and cannot be your most-built one (unless it is your only one).',
 				failDesc:'Lose a random building.',
 				icon:[24,11],
 				costMin:20,
@@ -133,7 +133,7 @@ M.launch=function()
 					if (buildings.length==0){Game.Popup('<div style="font-size:80%;">No buildings to improve!</div>',Game.mouseX,Game.mouseY);return -1;}
 					var building=choose(buildings);
 					building.buyFree(1);
-					Game.Popup('<div style="font-size:80%;">A new '+building.single+'<br>bursts out of the ground.</div>',Game.mouseX,Game.mouseY);
+					Game.Popup('<div style="font-size:80%;">A new '+building.single+'<br>bursts out of the ground, it was half off.</div>',Game.mouseX,Game.mouseY);
 				},
 				fail:function()
 				{
@@ -143,7 +143,7 @@ M.launch=function()
 					{if (Game.Objects[i].amount>0) buildings.push(Game.Objects[i]);}
 					var building=choose(buildings);
 					building.sacrifice(1);
-					Game.Popup('<div style="font-size:80%;">Backfire!<br>One of your '+building.plural+'<br>disappears in a puff of smoke.</div>',Game.mouseX,Game.mouseY);
+					Game.Popup('<div style="font-size:80%;">Backfire!<br>As you couldnt pay rent one of your '+building.plural+'<br>disappears in a puff of smoke.</div>',Game.mouseX,Game.mouseY);
 				},
 			},
 			'haggler\'s charm':{

@@ -13,11 +13,11 @@ M.launch=function()
 			'asceticism':{
 				name:'Holobore, Spirit of Asceticism',
 				icon:[21,18],
-				desc1:'<span class="green">+15% base CpS.</span>',
-				desc2:'<span class="green">+10% base CpS.</span>',
-				desc3:'<span class="green">+5% base CpS.</span>',
+				desc1:'<span class="green">+15% base RpS.</span>',
+				desc2:'<span class="green">+10% base RpS.</span>',
+				desc3:'<span class="green">+5% base RpS.</span>',
 				descAfter:'<span class="red">If a grade is earned, this spirit is unslotted and all worship swaps will be used up.</span>',
-				quote:'An immortal life spent focusing on the inner self, away from the distractions of bad grades.',
+				quote:'Your cousin Keito Hu; An immortal life spent on gpa instead of grades, as the Asceticism in the name suggests.',
 			},
 			'decadence':{
 				name:'Vomitrax, Spirit of Decadence',
@@ -25,7 +25,7 @@ M.launch=function()
 				desc1:'<span class="green">Golden and wrath cookie effect duration +7%,</span> <span class="red">but buildings grant -7% CpS.</span>',
 				desc2:'<span class="green">Golden and wrath cookie effect duration +5%,</span> <span class="red">but buildings grant -5% CpS.</span>',
 				desc3:'<span class="green">Golden and wrath cookie effect duration +2%,</span> <span class="red">but buildings grant -2% CpS.</span>',
-				quote:'This sleazy spirit is a disppointment and revels in the lust for quick easy gain and contempt for the value of steady work.',
+				quote:'Your other cousin Yanjia Ji; This sleazy spirit is a disppointment and revels in the lust for quick easy gain and contempt for the value of steady work.',
 			},
 			'ruin':{
 				name:'Godzamok, Spirit of Ruin',
@@ -34,7 +34,7 @@ M.launch=function()
 				desc1:'<span class="green">Buff boosts clicks by +1% for every building sold for 10 seconds.</span>',
 				desc2:'<span class="green">Buff boosts clicks by +0.5% for every building sold for 10 seconds.</span>',
 				desc3:'<span class="green">Buff boosts clicks by +0.25% for every building sold for 10 seconds.</span>',
-				quote:'The embodiment of an asian dad after you get a B. An impenetrable motive drives the devastation caused by this spirit.',
+				quote:'Your dad who went out to get the milk; The embodiment of an asian dad after you get a B. An impenetrable motive drives the devastation caused by this spirit.',
 			},
 			'ages':{
 				name:'Cyclius, Spirit of Ages',
@@ -52,7 +52,7 @@ M.launch=function()
 				desc1:'Effect cycles over 3 hours.',
 				desc2:'Effect cycles over 12 hours.',
 				desc3:'Effect cycles over 24 hours.',
-				quote:'This spirit knows about every grade you\'ll ever get, and enjoys dispensing a harsh beating.',
+				quote:'Your half asian friend Reid; This spirit knows about every grade you\'ll ever get, and enjoys dispensing a harsh beating.',
 			},
 			'seasons':{
 				name:'Selebrak, Spirit of Festivities',
@@ -61,7 +61,7 @@ M.launch=function()
 				desc1:'<span class="green">Large boost.</span> <span class="red">Switching seasons is 100% pricier.</span>',
 				desc2:'<span class="green">Medium boost.</span> <span class="red">Switching seasons is 50% pricier.</span>',
 				desc3:'<span class="green">Small boost.</span> <span class="red">Switching seasons is 25% pricier.</span>',
-				quote:'This is the spirit of merry getaways and regretful report card days mornings.',
+				quote:'This is you; This is the spirit of merry getaways and regretful report card days mornings.',
 			},
 			'creation':{
 				name:'Dotjeiess, Spirit of Creation',
@@ -69,7 +69,7 @@ M.launch=function()
 				desc1:'<span class="green">Buildings are 7% cheaper,</span> <span class="red">but heavenly chips have 30% less effect.</span>',
 				desc2:'<span class="green">Buildings are 5% cheaper,</span> <span class="red">but heavenly chips have 20% less effect.</span>',
 				desc3:'<span class="green">Buildings are 2% cheaper,</span> <span class="red">but heavenly chips have 10% less effect.</span>',
-				quote:'All things that be and ever will be were scripted long ago by this spirit\'s inscrutable tendrils.',
+				quote:'Your half Mexican friend Max; All things that be and ever will be were scripted long ago by this spirit\'s inscrutable tendrils.',
 			},
 			'labor':{
 				name:'Muridal, Spirit of Labor',
@@ -77,7 +77,7 @@ M.launch=function()
 				desc1:'<span class="green">Clicks are 15% more powerful,</span> <span class="red">but buildings produce 3% less.</span>',
 				desc2:'<span class="green">Clicks are 10% more powerful,</span> <span class="red">but buildings produce 2% less.</span>',
 				desc3:'<span class="green">Clicks are 5% more powerful,</span> <span class="red">but buildings produce 1% less.</span>',
-				quote:'This spirit enjoys a good cheese after a day of hard work.',
+				quote:'The cousin that your parents always compare you to; This spirit enjoys a good cheese after a day of hard work.',
 			},
 			'industry':{
 				name:'Jeremy, Spirit of Industry',
@@ -129,7 +129,7 @@ M.launch=function()
 		M.slot[2]=-1;//jade socket
 		
 		M.slotNames=[
-			'Diamond','Ruby','Jade'
+			'Taobao Diamond','Ebay Ruby','Cragslist Jade'
 		];
 		
 		M.swaps=3;//swaps left

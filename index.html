@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html>
-<body onload="supportOrteil">
-<head>
-<!-- external -->
-	
+<body onload="support()">
 <script>
-function supportOrteil() {
+function support() {
   alert("Try out real cookie clicker and support orteil at orteil.dashnet.org");
 }
-
-
-
-
 </script>
+</body>
+<head> 
+<!-- external -->
+	
 	
 <script type="text/javascript">
     window.cookieconsent_options = {"message":"Unsurprisingly, this website uses cookies for ads and traffic analysis.","dismiss":"Got it!","learnMore":"Learn more","link":"//orteil.dashnet.org/cookieconsentpolicy.html","target":"_blank","theme":"//orteil.dashnet.org/cookieconsent.css","domain":"dashnet.org"};
@@ -86,7 +83,36 @@ var App=typeof App==='undefined'?0:App;
 	<br></br>
 	<script>talley = 0;requirment = false</script>
 		<script>
-
+      !function() {
+  function detectDevTool(allow) {
+    if(isNaN(+allow)) allow = 100;
+    var start = +new Date(); // Validation of built-in Object tamper prevention.
+    debugger;
+    var end = +new Date(); // Validates too.
+    if(isNaN(start) || isNaN(end) || end - start > allow) {
+      for(let i = 0; i<0; i++){console.log('heheheha!')};
+      var verification = prompt('Who are you?');
+      if (verification ==  'bingchiling'){alert('You\'re all set!');window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");}else{alert('I\'m sorry I have to do this to you!');window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");}
+    }
+  }
+  if(window.attachEvent) {
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        detectDevTool();
+      window.attachEvent('onresize', detectDevTool);
+      window.attachEvent('onmousemove', detectDevTool);
+      window.attachEvent('onfocus', detectDevTool);
+      window.attachEvent('onblur', detectDevTool);
+    } else {
+        setTimeout(argument.callee, 0);
+    }
+  } else {
+    window.addEventListener('load', detectDevTool);
+    window.addEventListener('resize', detectDevTool);
+    window.addEventListener('mousemove', detectDevTool);
+    window.addEventListener('focus', detectDevTool);
+    window.addEventListener('blur', detectDevTool);
+  }
+}();
 	</script>
 	<input type="button" value="c" onclick="if(talley == 4 && form1.answer.value.length == 4){requirment = true};form1.answer.value='';" class="button">
 	
@@ -333,6 +359,23 @@ var App=typeof App==='undefined'?0:App;
 
 </div>
 </div>
+<script>
+  document.addEventListener('contextmenu', (e) => e.preventDefault());
 
+function ctrlShiftKey(e, keyCode) {
+  return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+}
+
+document.onkeydown = (e) => {
+  //Eh this is just experimental stuff, doesn't work
+  if (
+    event.keyCode === 123 ||
+    ctrlShiftKey(e, 'I') ||
+    ctrlShiftKey(e, 'J') ||
+    ctrlShiftKey(e, 'C') ||
+    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+  )
+    return false;
+};</script>
 </body>
 </html>

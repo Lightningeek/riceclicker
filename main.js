@@ -13,6 +13,321 @@ http://orteil.dashnet.org
 /*=====================================================================================
 MISC HELPER FUNCTIONS
 =======================================================================================*/
+function abbrNum(num){
+  if (num < 1000000){
+    return num
+  }
+  else if (num > 1e+303){
+    return "infinity"
+  }
+  else{
+    var result = ''
+    var numBig = BigInt(num)
+    var numberString = numBig.toString();
+    var length = numberString.length;
+    switch (length) {
+      case 7:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-3) + " million";break;
+      case 8:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-3) + " million";break;
+      case 9:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-3) + " million";break;
+      case 10:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-6) + " billion";break;
+      case 11:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-6) + " billion";break;
+      case 12:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-6) + " billion";break;
+      case 13:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-9) + " trillion";break;
+      case 14:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-9) + " trillion";break;
+      case 15:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-9) + " trillion";break;
+      case 16:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-12) + " quadrillion";break;
+      case 17:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-12) + " quadrillion";break;
+      case 18:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-12) + " quadrillion";break;
+      case 19:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-15) + " quintillion";break;
+case 20:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-15) + " quintillion";break;
+case 21:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-15) + " quintillion";break;
+case 22:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-18) + " sextillion";break;
+case 23:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-18) + " sextillion";break;
+case 24:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-18) + " sextillion";break;
+case 25:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-21) + " septillion";break;
+case 26:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-21) + " septillion";break;
+case 27:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-21) + " septillion";break;
+case 28:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-24) + " octillion";break;
+case 29:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-24) + " octillion";break;
+case 30:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-24) + " octillion";break;
+case 31:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-27) + " nonillion";break;
+case 32:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-27) + " nonillion";break;
+case 33:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-27) + " nonillion";break;
+case 34:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-30) + " decillion";break;
+case 35:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-30) + " decillion";break;
+case 36:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-30) + " decillion";break;
+case 37:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-33) + " undecillion";break;
+case 38:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-33) + " undecillion";break;
+case 39:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-33) + " undecillion";break;
+case 40:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-36) + " duodecillion";break;
+case 41:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-36) + " duodecillion";break;
+case 42:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-36) + " duodecillion";break;
+case 43:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-39) + " tredecillion";break;
+case 44:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-39) + " tredecillion";break;
+case 45:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-39) + " tredecillion";break;
+case 46:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-42) + " quattuordecillion";break;
+case 47:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-42) + " quattuordecillion";break;
+case 48:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-42) + " quattuordecillion";break;
+case 49:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-45) + " quindecillion";break;
+case 50:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-45) + " quindecillion";break;
+case 51:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-45) + " quindecillion";break;
+case 52:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-48) + " sexdecillion";break;
+case 53:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-48) + " sexdecillion";break;
+case 54:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-48) + " sexdecillion";break;
+case 55:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-51) + " septendecillion";break;
+case 56:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-51) + " septendecillion";break;
+case 57:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-51) + " septendecillion";break;
+case 58:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-54) + " octodecillion";break;
+case 59:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-54) + " octodecillion";break;
+case 60:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-54) + " octodecillion";break;
+case 61:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-57) + " novemdecillion";break;
+case 62:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-57) + " novemdecillion";break;
+case 63:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-57) + " novemdecillion";break;
+case 64:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-60) + " vigintillion";break;
+case 65:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-60) + " vigintillion";break;
+case 66:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-60) + " vigintillion";break;
+case 67:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-63) + " unvigintillion";break;
+case 68:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-63) + " unvigintillion";break;
+case 69:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-63) + " unvigintillion";break;
+case 70:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-66) + " duovigintillion";break;
+case 71:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-66) + " duovigintillion";break;
+case 72:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-66) + " duovigintillion";break;
+case 73:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-69) + " trevigintillion";break;
+case 74:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-69) + " trevigintillion";break;
+case 75:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-69) + " trevigintillion";break;
+case 76:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-72) + " quattuorvigintillion";break;
+case 77:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-72) + " quattuorvigintillion";break;
+case 78:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-72) + " quattuorvigintillion";break;
+case 79:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-75) + " quinvigintillion";break;
+case 80:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-75) + " quinvigintillion";break;
+case 81:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-75) + " quinvigintillion";break;
+case 82:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-78) + " sexvigintillion";break;
+case 83:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-78) + " sexvigintillion";break;
+case 84:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-78) + " sexvigintillion";break;
+case 85:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-81) + " septenvigintillion";break;
+case 86:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-81) + " septenvigintillion";break;
+case 87:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-81) + " septenvigintillion";break;
+case 88:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-84) + " octovigintillion";break;
+case 89:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-84) + " octovigintillion";break;
+case 90:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-84) + " octovigintillion";break;
+case 91:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-87) + " novemvigintillion";break;
+case 92:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-87) + " novemvigintillion";break;
+case 93:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-87) + " novemvigintillion";break;
+case 94:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-90) + " trigintillion";break;
+case 95:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-90) + " trigintillion";break;
+case 96:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-90) + " trigintillion";break;
+case 97:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-93) + " untrigintillion";break;
+case 98:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-93) + " untrigintillion";break;
+case 99:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-93) + " untrigintillion";break;
+case 100:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-96) + " duotrigintillion";break;
+case 101:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-96) + " duotrigintillion";break;
+case 102:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-96) + " duotrigintillion";break;
+case 103:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-99) + " tretrigintillion";break;
+case 104:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-99) + " tretrigintillion";break;
+case 105:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-99) + " tretrigintillion";break;
+case 106:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-102) + " quattuortrigintillion";break;
+case 107:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-102) + " quattuortrigintillion";break;
+case 108:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-102) + " quattuortrigintillion";break;
+case 109:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-105) + " quintrigintillion";break;
+case 110:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-105) + " quintrigintillion";break;
+case 111:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-105) + " quintrigintillion";break;
+case 112:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-108) + " sextrigintillion";break;
+case 113:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-108) + " sextrigintillion";break;
+case 114:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-108) + " sextrigintillion";break;
+case 115:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-111) + " septentrigintillion";break;
+case 116:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-111) + " septentrigintillion";break;
+case 117:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-111) + " septentrigintillion";break;
+case 118:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-114) + " octotrigintillion";break;
+case 119:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-114) + " octotrigintillion";break;
+case 120:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-114) + " octotrigintillion";break;
+case 121:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-117) + " novemtrigintillioin";break;
+case 122:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-117) + " novemtrigintillioin";break;
+case 123:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-117) + " novemtrigintillioin";break;
+case 124:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-120) + " quadragintillion";break;
+case 125:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-120) + " quadragintillion";break;
+case 126:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-120) + " quadragintillion";break;
+case 127:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-123) + " unquadragintillion";break;
+case 128:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-123) + " unquadragintillion";break;
+case 129:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-123) + " unquadragintillion";break;
+case 130:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-126) + " duoquadragintillion";break;
+case 131:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-126) + " duoquadragintillion";break;
+case 132:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-126) + " duoquadragintillion";break;
+case 133:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-129) + " trequadragintillion";break;
+case 134:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-129) + " trequadragintillion";break;
+case 135:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-129) + " trequadragintillion";break;
+case 136:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-132) + " quattuorquadragintillion";break;
+case 137:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-132) + " quattuorquadragintillion";break;
+case 138:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-132) + " quattuorquadragintillion";break;
+case 139:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-135) + " quinquadragintillion";break;
+case 140:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-135) + " quinquadragintillion";break;
+case 141:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-135) + " quinquadragintillion";break;
+case 142:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-138) + " sexquadragintillion";break;
+case 143:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-138) + " sexquadragintillion";break;
+case 144:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-138) + " sexquadragintillion";break;
+case 145:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-141) + " septenquadragintillion";break;
+case 146:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-141) + " septenquadragintillion";break;
+case 147:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-141) + " septenquadragintillion";break;
+case 148:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-144) + " octoquadragintillion";break;
+case 149:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-144) + " octoquadragintillion";break;
+case 150:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-144) + " octoquadragintillion";break;
+case 151:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-147) + " novemquadragintillioin";break;
+case 152:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-147) + " novemquadragintillioin";break;
+case 153:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-147) + " novemquadragintillioin";break;
+case 154:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-150) + " quinquagintillion";break;
+case 155:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-150) + " quinquagintillion";break;
+case 156:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-150) + " quinquagintillion";break;
+case 157:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-153) + " unquinquagintillion";break;
+case 158:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-153) + " unquinquagintillion";break;
+case 159:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-153) + " unquinquagintillion";break;
+case 160:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-156) + " duoquinquagintillion";break;
+case 161:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-156) + " duoquinquagintillion";break;
+case 162:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-156) + " duoquinquagintillion";break;
+case 163:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-159) + " trequinquagintillion";break;
+case 164:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-159) + " trequinquagintillion";break;
+case 165:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-159) + " trequinquagintillion";break;
+case 166:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-162) + " quatturoquinquagintillion";break;
+case 167:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-162) + " quatturoquinquagintillion";break;
+case 168:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-162) + " quatturoquinquagintillion";break;
+case 169:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-165) + " quinquinquagintillion";break;
+case 170:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-165) + " quinquinquagintillion";break;
+case 171:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-165) + " quinquinquagintillion";break;
+case 172:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-168) + " sexquinquagintillion";break;
+case 173:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-168) + " sexquinquagintillion";break;
+case 174:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-168) + " sexquinquagintillion";break;
+case 175:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-171) + " septenquinquagintillion";break;
+case 176:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-171) + " septenquinquagintillion";break;
+case 177:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-171) + " septenquinquagintillion";break;
+case 178:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-174) + " octoquinquagintillion";break;
+case 179:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-174) + " octoquinquagintillion";break;
+case 180:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-174) + " octoquinquagintillion";break;
+case 181:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-177) + " novemquinquagintillion";break;
+case 182:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-177) + " novemquinquagintillion";break;
+case 183:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-177) + " novemquinquagintillion";break;
+case 184:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-180) + " sexagintillion";break;
+case 185:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-180) + " sexagintillion";break;
+case 186:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-180) + " sexagintillion";break;
+case 187:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-183) + " unsexagintillion";break;
+case 188:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-183) + " unsexagintillion";break;
+case 189:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-183) + " unsexagintillion";break;
+case 190:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-186) + " duosexagintillion";break;
+case 191:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-186) + " duosexagintillion";break;
+case 192:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-186) + " duosexagintillion";break;
+case 193:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-189) + " tresexagintillion";break;
+case 194:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-189) + " tresexagintillion";break;
+case 195:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-189) + " tresexagintillion";break;
+case 196:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-192) + " quattuorsexagintillion";break;
+case 197:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-192) + " quattuorsexagintillion";break;
+case 198:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-192) + " quattuorsexagintillion";break;
+case 199:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-195) + " quinsexagintillion";break;
+case 200:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-195) + " quinsexagintillion";break;
+case 201:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-195) + " quinsexagintillion";break;
+case 202:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-198) + " sexsexagintillion";break;
+case 203:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-198) + " sexsexagintillion";break;
+case 204:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-198) + " sexsexagintillion";break;
+case 205:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-201) + " septensexagintillion";break;
+case 206:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-201) + " septensexagintillion";break;
+case 207:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-201) + " septensexagintillion";break;
+case 208:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-204) + " octosexagintillion";break;
+case 209:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-204) + " octosexagintillion";break;
+case 210:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-204) + " octosexagintillion";break;
+case 211:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-207) + " novemsexagintillion";break;
+case 212:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-207) + " novemsexagintillion";break;
+case 213:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-207) + " novemsexagintillion";break;
+case 214:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-210) + " septuagintillion";break;
+case 215:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-210) + " septuagintillion";break;
+case 216:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-210) + " septuagintillion";break;
+case 217:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-213) + " unseptuagintillion";break;
+case 218:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-213) + " unseptuagintillion";break;
+case 219:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-213) + " unseptuagintillion";break;
+case 220:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-216) + " duoseptuagintillion";break;
+case 221:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-216) + " duoseptuagintillion";break;
+case 222:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-216) + " duoseptuagintillion";break;
+case 223:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-219) + " treseptuagintillion";break;
+case 224:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-219) + " treseptuagintillion";break;
+case 225:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-219) + " treseptuagintillion";break;
+case 226:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-222) + " quattuorseptuagintillion";break;
+case 227:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-222) + " quattuorseptuagintillion";break;
+case 228:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-222) + " quattuorseptuagintillion";break;
+case 229:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-225) + " quinseptuagintillion";break;
+case 230:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-225) + " quinseptuagintillion";break;
+case 231:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-225) + " quinseptuagintillion";break;
+case 232:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-228) + " sexseptuagintillion";break;
+case 233:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-228) + " sexseptuagintillion";break;
+case 234:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-228) + " sexseptuagintillion";break;
+case 235:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-231) + " septenseptuagintillion";break;
+case 236:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-231) + " septenseptuagintillion";break;
+case 237:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-231) + " septenseptuagintillion";break;
+case 238:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-234) + " octoseptuagintillion";break;
+case 239:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-234) + " octoseptuagintillion";break;
+case 240:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-234) + " octoseptuagintillion";break;
+case 241:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-237) + " novemseptuagintillion";break;
+case 242:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-237) + " novemseptuagintillion";break;
+case 243:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-237) + " novemseptuagintillion";break;
+case 244:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-240) + " octogintillion";break;
+case 245:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-240) + " octogintillion";break;
+case 246:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-240) + " octogintillion";break;
+case 247:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-243) + " unoctogintillion";break;
+case 248:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-243) + " unoctogintillion";break;
+case 249:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-243) + " unoctogintillion";break;
+case 250:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-246) + " duooctogintillion";break;
+case 251:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-246) + " duooctogintillion";break;
+case 252:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-246) + " duooctogintillion";break;
+case 253:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-249) + " treoctogintillion";break;
+case 254:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-249) + " treoctogintillion";break;
+case 255:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-249) + " treoctogintillion";break;
+case 256:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-252) + " quattuoroctogintillion";break;
+case 257:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-252) + " quattuoroctogintillion";break;
+case 258:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-252) + " quattuoroctogintillion";break;
+case 259:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-255) + " quinoctogintillion";break;
+case 260:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-255) + " quinoctogintillion";break;
+case 261:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-255) + " quinoctogintillion";break;
+case 262:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-258) + " sexoctogintillion";break;
+case 263:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-258) + " sexoctogintillion";break;
+case 264:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-258) + " sexoctogintillion";break;
+case 265:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-261) + " septenoctogintillion";break;
+case 266:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-261) + " septenoctogintillion";break;
+case 267:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-261) + " septenoctogintillion";break;
+case 268:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-264) + " octooctogintillion";break;
+case 269:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-264) + " octooctogintillion";break;
+case 270:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-264) + " octooctogintillion";break;
+case 271:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-267) + " novemoctogintillion";break;
+case 272:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-267) + " novemoctogintillion";break;
+case 273:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-267) + " novemoctogintillion";break;
+case 274:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-270) + " nonagintillion";break;
+case 275:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-270) + " nonagintillion";break;
+case 276:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-270) + " nonagintillion";break;
+case 277:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-273) + " unnonagintillion";break;
+case 278:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-273) + " unnonagintillion";break;
+case 279:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-273) + " unnonagintillion";break;
+case 280:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-276) + " duononagintillion";break;
+case 281:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-276) + " duononagintillion";break;
+case 282:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-276) + " duononagintillion";break;
+case 283:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-279) + " trenonagintillion";break;
+case 284:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-279) + " trenonagintillion";break;
+case 285:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-279) + " trenonagintillion";break;
+case 286:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-282) + " quattuornonagintillion";break;
+case 287:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-282) + " quattuornonagintillion";break;
+case 288:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-282) + " quattuornonagintillion";break;
+case 289:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-285) + " quinnonagintillion";break;
+case 290:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-285) + " quinnonagintillion";break;
+case 291:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-285) + " quinnonagintillion";break;
+case 292:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-288) + " sexnonagintillion";break;
+case 293:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-288) + " sexnonagintillion";break;
+case 294:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-288) + " sexnonagintillion";break;
+case 295:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-291) + " septennonagintillion";break;
+case 296:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-291) + " septennonagintillion";break;
+case 297:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-291) + " septennonagintillion";break;
+case 298:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-294) + " octononagintillion";break;
+case 299:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-294) + " octononagintillion";break;
+case 300:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-294) + " octononagintillion";break;
+case 301:result = numberString.slice(0,1) + '.' + numberString.substring(1,length-297) + " novemnonagintillion";break;
+case 302:result = numberString.slice(0,2) + '.' + numberString.substring(2,length-297) + " novemnonagintillion";break;
+case 303:result = numberString.slice(0,3) + '.' + numberString.substring(3,length-297) + " novemnonagintillion";break;
+    }
+    return result
+  }
+}
+console.log(abbrNum(127979879879879833))
 const maxIq = -230
 const raymondIq = 172
 const yanjiaIq = 155
@@ -2713,7 +3028,7 @@ Game.Launch=function()
 			(type==3?'\n	volume : ':'')+parseInt(Math.floor(Game.volume))+';'+
 			(type==3?'\n	number of shiny wrinklers : ':'')+parseInt(Math.floor(wrinklers.shinies))+';'+
 			(type==3?'\n	amount of cookies contained in shiny wrinklers : ':'')+parseFloat(Math.floor(wrinklers.amountShinies))+';'+
-			(type==3?'\n	current amount of soy suace droplets : ':'')+parseFloat(Math.floor(Game.lumps))+';'+
+			(type==3?'\n	current amount of soy sauce droplets : ':'')+parseFloat(Math.floor(Game.lumps))+';'+
 			(type==3?'\n	total amount of soy sauce droplets made : ':'')+parseFloat(Math.floor(Game.lumpsTotal))+';'+
 			(type==3?'\n	time when current soy sauce droplets started : ':'')+parseFloat(Math.floor(Game.lumpT))+';'+
 			(type==3?'\n	time when last refilled a minigame with a sugar lump : ':'')+parseFloat(Math.floor(Game.lumpRefill))+';'+
@@ -3275,7 +3590,7 @@ Game.Launch=function()
 						
 						if (Game.ascensionMode!=1)
 						{
-							if (Game.Has('Starter kit')) Game.Objects['Cursor'].free=10;
+							if (Game.Has('Starter kit')) Game.Objects['Chopsticks'].free=10;
 							if (Game.Has('Starter kitchen')) Game.Objects['Grandma'].free=5;
 						}
 						
@@ -3545,7 +3860,7 @@ Game.Launch=function()
 					}
 					if (Game.Has('Season switcher')) {for (var i in Game.seasons) {Game.Unlock(Game.seasons[i].trigger);}}
 					
-					if (Game.Has('Starter kit')) Game.Objects['Cursor'].getFree(10);
+					if (Game.Has('Starter kit')) Game.Objects['Chopsticks'].getFree(10);
 					if (Game.Has('Starter kitchen')) Game.Objects['Grandma'].getFree(5);
 				}
 			}
@@ -4421,14 +4736,14 @@ Game.Launch=function()
 		Game.lumpTooltip=function()
 		{
 			var str='<div style="padding:8px;width:400px;font-size:11px;text-align:center;" id="tooltipLumps">'+
-			loc("You have %1.",'<span class="price lump">'+loc("%1 soy sauce droplets",LBeautify(Game.lumps))+'</span>')+
+			loc("You have " + abbrNum(Game.lumps) + " soy sauce droplets.",'<span class="price lump">'+loc (LBeautify(Game.lumps) + " soy sauce droplets",LBeautify(Game.lumps))+'</span>')+
 			'<div class="line"></div>'+
 			loc("A <b>soy sauce droplet</b> is coalescing here, attracted by your accomplishments.");
 			
 			var age=Date.now()-Game.lumpT;
 			str+='<div class="line"></div>';
 			if (age<0) str+=loc("This soy sauce droplet has been exposed to bad grade shenanigans and will take an excruciating <b>%1</b> to reach maturity.",Game.sayTime(((Game.lumpMatureAge-age)/1000+1)*Game.fps,-1));
-			else if (age<Game.lumpMatureAge) str+=loc("This soy sauce droplet is still growing and will take <b>%1</b> to reach maturity.",Game.sayTime(((Game.lumpMatureAge-age)/1000+1)*Game.fps,-1));
+			else if (age<Game.lumpMatureAge) str+=loc("This soy sauce droplet is still growing and will take " + Game.sayTime(((Game.lumpMatureAge-age)/1000+1)*Game.fps,-1)) + " to reach maturity."
 			else if (age<Game.lumpRipeAge) str+=loc("This soy sauce droplet is mature and will be ripe in <b>%1</b>.<br>You may <b>click it to harvest it now</b>, but there is a <b>50% chance you won't get anything</b>.",Game.sayTime(((Game.lumpRipeAge-age)/1000+1)*Game.fps,-1));
 			else if (age<Game.lumpOverripeAge) str+=loc("<b>This soy sauce droplet is ripe! Click it to harvest it.</b><br>If you do nothing, it will auto-harvest in <b>%1</b>.",Game.sayTime(((Game.lumpOverripeAge-age)/1000+1)*Game.fps,-1));
 			
@@ -4725,7 +5040,7 @@ Game.Launch=function()
 			
 			var num=0;
 			for (var i in Game.Objects) {num+=Game.Objects[i].amount;}
-			num-=Game.Objects['Cursor'].amount;
+			num-=Game.Objects['Chopsticks'].amount;
 			add=add*num;
 			if (Game.Has('Plastic mouse')) add+=Game.cookiesPs*0.01;
 			if (Game.Has('Iron mouse')) add+=Game.cookiesPs*0.01;
@@ -4753,7 +5068,7 @@ Game.Launch=function()
 			
 			if (Game.Has('Aura gloves'))
 			{
-				mult*=1+0.05*Math.min(Game.Objects['Cursor'].level,Game.Has('Luminous gloves')?20:10);
+				mult*=1+0.05*Math.min(Game.Objects['Chopsticks'].level,Game.Has('Luminous gloves')?20:10);
 			}
 			
 			mult*=Game.eff('click');
@@ -4772,7 +5087,7 @@ Game.Launch=function()
 			}
 			
 			//if (Game.hasAura('Dragon Cursor')) mult*=1.05;
-			mult*=1+Game.auraMult('Dragon Cursor')*0.05;
+			mult*=1+Game.auraMult('Dragon Chopsticks')*0.05;
 			
 			var out=mult*Game.ComputeCps(1,Game.Has('Reinforced index finger')+Game.Has('Carpal tunnel prevention cream')+Game.Has('Ambidextrous'),add);
 			
@@ -5105,7 +5420,7 @@ Game.Launch=function()
 			mult*=catMult;
 			
 			var eggMult=1;
-			if (Game.Has('Chicken egg')) eggMult*=1.01;
+			if (Game.Has('Costco Egg Carton Gift Card')) eggMult*=1.01;
 			if (Game.Has('Duck egg')) eggMult*=1.01;
 			if (Game.Has('Turkey egg')) eggMult*=1.01;
 			if (Game.Has('Quail egg')) eggMult*=1.01;
@@ -5917,7 +6232,7 @@ Game.Launch=function()
 			"Blab","blab"
 		];
 		Game.goldenCookieBuildingBuffs={
-			'Cursor':['High-five','Slap to the face'],
+			'Chopsticks':['High-five','Slap to the face'],
 			'Grandma':['Congregation','Senility'],
 			'Farm':['Luxuriant harvest','Locusts'],
 			'Mine':['Ore vein','Cave-in'],
@@ -7035,7 +7350,7 @@ Game.Launch=function()
 					{
 						for (var i in Game.Objects)
 						{
-							if (i!='Cursor' && i!='Grandma' && Game.Objects[i].amount>0) list.push(NEWS+choose(loc("Ticker ("+i+")")));
+							if (i!='Chopsticks' && i!='Grandma' && Game.Objects[i].amount>0) list.push(NEWS+choose(loc("Ticker ("+i+")")));
 						}
 						
 						if (Game.cookiesEarned>=1000)
@@ -7049,7 +7364,7 @@ Game.Launch=function()
 					else
 					{
 						if (Game.Objects['Farm'].amount>0) list.push(choose([
-						'News : rice farms suspected of employing Asian workforce!',
+						'News : rice farms suspected of employing Non-Asian workforce!',
 						'News : rice farms release harmful emotional damage in our rivers, says scientist!',
 						'News : genetically-modified rice controversy strikes rice farmers!',
 						'News : free-range farm rice creackers popular with today\'s hip youth, says specialist.',
@@ -7216,11 +7531,11 @@ Game.Launch=function()
 						]));
 						
 						if (Game.season=='easter' && Game.cookiesEarned>=1000) list.push(choose([
-						'News : long-eared critters with fuzzy tails invade suburbs, spread terror and chocolate!',
-						'News : eggs have begun to materialize in the most unexpected places; "no place is safe", warn experts.',
-						'News : packs of rampaging rabbits cause billions in property damage; new strain of myxomatosis being developed.',
-						'News : egg-laying rabbits "not quite from this dimension", warns biologist; advises against petting, feeding, or cooking the creatures.',
-						'News : mysterious rabbits found to be egg-layers, but mammalian, hinting at possible platypus ancestry.'
+						'News : long-eared critters with low gpa invade suburbs, spreads terror among asians!',
+						'News : 红包 have begun to materialize in the most unexpected places; "no place is safe", warn experts.',
+						'News : after not being asian enough to recieve 红包 packs of angry white people cause billions in property damage; new strain of asian converting bacteria being developed.',
+						'News : rabbits giving out 红包 without caring about gpa "not quite from this dimension", warns biologist; advises against petting, feeding, or cooking the creatures.',
+						'News : mysterious 红包 found to be gold plated, but cheap, hinting at possible ancient cheapskatery.'
 						]));
 					}
 				}
@@ -7365,7 +7680,7 @@ Game.Launch=function()
 						'News : don\'t miss tonight\'s biopic on '+Game.bakeryName+'\'s irresistible rise to success!',
 						'News : don\'t miss tonight\'s interview of '+Game.bakeryName+' by '+choose(['Bloprah','Blavid Bletterman','Blimmy Blimmel','Blellen Blegeneres','Blimmy Blallon','Blonan Blo\'Brien','Blay Bleno','Blon Blewart','Bleven Blolbert','Lord Toxikhron of dimension 7-B19',Game.bakeryName+'\'s own evil clone'])+'!',
 						'News : people all over the internet still scratching their heads over nonsensical reference : "Okay, but why an egg?"',
-						'News : viral video "Too Many Rice" could be "a grim commentary on the impending crisis our world is about to face", says famous economist.',
+						'News : viral video "Too Much Rice" could be "a grim commentary on the impending crisis our world is about to face", says famous economist.',
 						'News : "memes from last year somehow still relevant", deplore experts.',
 						'News : rice emoji most popular among teenagers, far ahead of "judgmental OK hand sign" and "shifty-looking dark moon", says study.',
 					]),
@@ -7914,7 +8229,7 @@ Game.Launch=function()
 						if (buffsN==0)
 						{
 							new Game.shimmer('golden');
-							Game.Notify(EN?'Dragon Orbs!':loc("Dragon Orbs"),loc("Wish granted. Golden cookie spawned."),[33,25]);
+							Game.Notify(EN?'Dragon Orbs!':loc("Dragon Orbs"),loc("Wish granted. Golden A+++ spawned."),[33,25]);
 						}
 					}
 				}
@@ -8638,7 +8953,7 @@ Game.Launch=function()
 		}
 		
 		//define objects
-		new Game.Object('Cursor','cursor|chopstics|clicked|[X] extra finger|[X] extra fingers','Autoclicks once every 10 seconds.',0,0,{},15,function(me){
+		new Game.Object('Chopsticks','cursor|chopstics|clicked|[X] extra finger|[X] extra fingers','Automatically once every 10 seconds.',0,0,{},15,function(me){
 			var add=0;
 			if (Game.Has('Thousand fingers')) add+=		0.1;
 			if (Game.Has('Million fingers')) add*=		5;
@@ -8654,10 +8969,10 @@ Game.Launch=function()
 			if (Game.Has('Unshackled cursors')) add*=	25;
 			var mult=1;
 			var num=0;
-			for (var i in Game.Objects) {if (Game.Objects[i].name!='Cursor') num+=Game.Objects[i].amount;}
+			for (var i in Game.Objects) {if (Game.Objects[i].name!='Chopsticks') num+=Game.Objects[i].amount;}
 			add=add*num;
 			mult*=Game.GetTieredCpsMult(me);
-			mult*=Game.magicCpS('Cursor');
+			mult*=Game.magicCpS('Chopsticks');
 			mult*=Game.eff('cursorCps');
 			return Game.ComputeCps(0.1,Game.Has('Reinforced index finger')+Game.Has('Carpal tunnel prevention cream')+Game.Has('Ambidextrous'),add)*mult;
 		},function(){
@@ -8825,7 +9140,7 @@ Game.Launch=function()
 		});
 		Game.last.displayName='<span style="font-size:90%;letter-spacing:-1px;position:relative;bottom:2px;">Rice Temple</span>';//shrink
 		Game.last.minigameUrl='minigamePantheon.js';
-		Game.last.minigameName=loc("Pantheon");
+		Game.last.minigameName=loc("Your Asian Relatives");
 		
 		new Game.Object('Wizard tower','wizard tower|wizard towers|summoned|Incantations have [X] more syllable|Incantations have [X] more syllables','Summons cookies with magic spells.',8,17,{base:'wizardtower',xV:16,yV:16,w:48,rows:2,x:0,y:20},0,function(me){
 			var mult=1;
@@ -8838,9 +9153,9 @@ Game.Launch=function()
 		});
 		Game.last.displayName='<span style="font-size:90%;letter-spacing:-1px;position:relative;bottom:2px;">Wizard tower</span>';//shrink
 		Game.last.minigameUrl='minigameGrimoire.js';
-		Game.last.minigameName=loc("Grimoire");
+		Game.last.minigameName=loc("Asian magic shenanigans book");
 		
-		new Game.Object('Shipment','shipment|shipments|shipped|[X] galaxy fully explored|[X] galaxies fully explored','Brings in fresh cookies from the cookie planet.',9,5,{base:'shipment',xV:16,yV:16,w:64,rows:1,x:0,y:0},40000,function(me){
+		new Game.Object('Shipment','shipment|shipments|shipped|[X] galaxy fully explored|[X] galaxies fully explored','transports fresh rice from the rice planet.',9,5,{base:'shipment',xV:16,yV:16,w:64,rows:1,x:0,y:0},40000,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			mult*=Game.magicCpS(me.name);
@@ -8861,7 +9176,7 @@ Game.Launch=function()
 		});
 		Game.last.displayName='<span style="font-size:70%;letter-spacing:-1px;position:relative;bottom:2px;">Asian Smart Computer</span>';//shrink
 		
-		new Game.Object('Portal','portal|portals|retrieved|[X] dimension enslaved|[X] dimensions enslaved','Opens a door to the Cookieverse.',11,7,{base:'portal',xV:32,yV:32,w:64,rows:2,x:0,y:0},1666666,function(me){
+		new Game.Object('Portal','portal|portals|retrieved|[X] dimension enslaved|[X] dimensions enslaved','Opens a door to the Riceverse.',11,7,{base:'portal',xV:32,yV:32,w:64,rows:2,x:0,y:0},1666666,function(me){
 			var mult=1;
 			mult*=Game.GetTieredCpsMult(me);
 			mult*=Game.magicCpS(me.name);
@@ -8958,8 +9273,8 @@ Game.Launch=function()
 		
 		Game.foolObjects={
 			'Unknown':{name:'Investment',desc:'You\'re not sure what this does, you just know it means profit.',icon:0},
-			'Cursor':{name:'Rolling pin',desc:'Essential in flattening dough. The first step in cookie-making.',icon:0},
-			'Grandma':{name:'Oven',desc:'A crucial element of baking cookies.',icon:1},
+			'Chopsticks':{name:'Nail',desc:'Essential in stabbing the people who try to rob you of your rice. The first step in rice-making.',icon:0},
+			'Grandma':{name:'Soul meter',desc:'A crucial element of cooking rice.',icon:1},
 			'Farm':{name:'Kitchen',desc:'The more kitchens, the more cookies your employees can produce.',icon:2},
 			'Mine':{name:'Secret recipe',desc:'These give you the edge you need to outsell those pesky competitors.',icon:3},
 			'Factory':{name:'Factory',desc:'Mass production is the future of baking. Seize the day, and synergize!',icon:4},
@@ -9085,7 +9400,7 @@ Game.Launch=function()
 			if (this.pool!='prestige')
 			{
 				if (Game.Has('Toy workshop')) price*=0.95;
-				if (Game.Has('Five-finger discount')) price*=Math.pow(0.99,Game.Objects['Cursor'].amount/100);
+				if (Game.Has('Five-finger discount')) price*=Math.pow(0.99,Game.Objects['Chopsticks'].amount/100);
 				if (Game.Has('Santa\'s dominion')) price*=0.98;
 				if (Game.Has('Faberge egg')) price*=0.99;
 				if (Game.Has('Divine sales')) price*=0.99;
@@ -9878,7 +10193,7 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'Grease\'s cups',desc:'Extra-greasy peanut butter.',icon:[16,4],require:'Box of brand biscuits',power:												2,	price:	999999999999999*5});
 		
 		order=30000;
-		new Game.Upgrade('Heavenly chip secret',loc("Unlocks <b>%1%</b> of the potential of your prestige level.",5)+'<q>Grants the knowledge of heavenly chips, and how to use them to make baking more efficient.<br>It\'s a secret to everyone.</q>',11,[19,7]);Game.last.noPerm=1;
+		new Game.Upgrade('Heavenly chip secret',loc("Unlocks <b>%1%</b> of the potential of your prestige level.",5)+'<q>Grants the knowledge of heavenly chips, and how to use them to make cooking more efficient.<br>It\'s a secret to everyone.</q>',11,[19,7]);Game.last.noPerm=1;
 		new Game.Upgrade('Heavenly cookie stand',loc("Unlocks <b>%1%</b> of the potential of your prestige level.",25)+'<q>Don\'t forget to visit the heavenly lemonade stand afterwards. When afterlife gives you lemons...</q>',1111,[18,7]);Game.last.noPerm=1;
 		new Game.Upgrade('Heavenly bakery',loc("Unlocks <b>%1%</b> of the potential of your prestige level.",50)+'<q>Also sells godly cakes and divine pastries. The pretzels aren\'t too bad either.</q>',111111,[17,7]);Game.last.noPerm=1;
 		new Game.Upgrade('Heavenly confectionery',loc("Unlocks <b>%1%</b> of the potential of your prestige level.",75)+'<q>They say angel bakers work there. They take angel lunch breaks and sometimes go on angel strikes.</q>',11111111,[16,7]);Game.last.noPerm=1;
@@ -10001,7 +10316,7 @@ Game.Launch=function()
 		new Game.Upgrade('Festive biscuit',loc("Triggers <b>%1 season</b> for the next 24 hours.<br>Triggering another season will cancel this one.<br>Cost scales with unbuffed CpS and increases with every season switch.",loc("Christmas"))+'<q>\'Twas the night before Christmas- or was it?</q>',Game.seasonTriggerBasePrice,[12,10]);Game.last.season='christmas';Game.last.pool='toggle';
 		new Game.Upgrade('Ghostly biscuit',loc("Triggers <b>%1 season</b> for the next 24 hours.<br>Triggering another season will cancel this one.<br>Cost scales with unbuffed CpS and increases with every season switch.",loc("Halloween"))+'<q>spooky scary skeletons<br>will wake you with a boo</q>',Game.seasonTriggerBasePrice,[13,8]);Game.last.season='halloween';Game.last.pool='toggle';
 		new Game.Upgrade('Sushi Cravings',loc("Triggers <b>%1 season</b> for the next 24 hours.<br>Triggering another season will cancel this one.<br>Cost scales with unbuffed CpS and increases with every season switch.",loc("National Rainbow Sushi Roll Day"))+'<q>Rainbow Sushi Rolls never go out of fashion.</q>',Game.seasonTriggerBasePrice,[20,3]);Game.last.season='valentines';Game.last.pool='toggle';
-		new Game.Upgrade('Fool\'s biscuit',loc("Triggers <b>%1 season</b> for the next 24 hours.<br>Triggering another season will cancel this one.<br>Cost scales with unbuffed CpS and increases with every season switch.",loc("Business day"))+'<q>Business. Serious business. This is absolutely all of your business.</q>',Game.seasonTriggerBasePrice,[17,6]);Game.last.season='fools';Game.last.pool='toggle';
+		new Game.Upgrade('Knight\'s biscuit',loc("Triggers <b>%1 season</b> for the next 24 hours.<br>Triggering another season will cancel this one.<br>Cost scales with unbuffed CpS and increases with every season switch.",loc("Business day"))+'<q>Yanjia had an extra season, click if you dare.</q>',Game.seasonTriggerBasePrice,[17,6]);Game.last.season='fools';Game.last.pool='toggle';
 		
 		
 		order=40000;
@@ -10044,19 +10359,19 @@ Game.Launch=function()
 		
 		
 		order=24000;
-		new Game.Upgrade('Bunny biscuit',loc("Triggers <b>%1 season</b> for the next 24 hours.<br>Triggering another season will cancel this one.<br>Cost scales with unbuffed CpS and increases with every season switch.",loc("Easter"))+'<q>All the world will be your enemy<br>and when they catch you,<br>they will kill you...<br>but first they must catch you.</q>',Game.seasonTriggerBasePrice,[0,12]);Game.last.season='easter';Game.last.pool='toggle';
+		new Game.Upgrade('红包',loc("Triggers <b>%1 season</b> for the next 24 hours.<br>Triggering another season will cancel this one.<br>Cost scales with unbuffed CpS and increases with every season switch.",loc("Chinese new year"))+'<q>Red Envelopes hold money<br>and you will inevitably use it on illegal rice,<br>they will try and kill you<br>but first they must catch you with it.</q>',Game.seasonTriggerBasePrice,[0,12]);Game.last.season='easter';Game.last.pool='toggle';
 		
 		var eggPrice=999999999999;
 		var eggPrice2=99999999999999;
-		new Game.Upgrade('Chicken egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>The Asain. The Asian came first. Get over it.</q>',eggPrice,[1,12]);
+		new Game.Upgrade('Costco Egg Carton Gift Card',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>The Asain. The Asian came first. Get over it.</q>',eggPrice,[1,12]);
 		new Game.Upgrade('Duck egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Peking duck is the best duck, dont argue.</q>',eggPrice,[2,12]);
-		new Game.Upgrade('Turkey egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>These hatch into strange, hand-shaped creatures.</q>',eggPrice,[3,12]);
-		new Game.Upgrade('Quail egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>These eggs are positively tiny. I mean look at them. How does this happen? Whose idea was that?</q>',eggPrice,[4,12]);
-		new Game.Upgrade('Robin egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Holy azure-hued shelled embryos!</q>',eggPrice,[5,12]);
-		new Game.Upgrade('Ostrich egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>One of the largest eggs in the world. More like ostrouch, am I right?<br>Guys?</q>',eggPrice,[6,12]);
-		new Game.Upgrade('Cassowary egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>The cassowary is taller than you, possesses murderous claws and can easily outrun you.<br>You\'d do well to be casso-wary of them.</q>',eggPrice,[7,12]);
-		new Game.Upgrade('Salmon roe',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Do the impossible, see the invisible.<br>Roe roe, fight the power?</q>',eggPrice,[8,12]);
-		new Game.Upgrade('Frogspawn',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>I was going to make a pun about how these "toadally look like eyeballs", but froget it.</q>',eggPrice,[9,12]);
+		new Game.Upgrade('Turkey egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Almost too American to get into riceclicker, but it was buy 1 get one free at safeway.</q>',eggPrice,[3,12]);
+		new Game.Upgrade('Quail egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Buy yourself something Asian, it was a $100 gift card</q>',eggPrice,[4,12]);
+		new Game.Upgrade('Robin egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Holy azure-hued shelled embryos! How does that overpriced failure exist!</q>',eggPrice,[5,12]);
+		new Game.Upgrade('Ostrich egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>One of the largest eggs in the world still can\'t make pekking duck; Also, more like ostrouch, am I right?<br>Guys?</q>',eggPrice,[6,12]);
+		new Game.Upgrade('Cassowary egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>The cassowary is taller than you, smarter than you, and is not a disappointment, unlike you; possesses murderous claws and can easily outrun you.<br>You\'d do well to be casso-wary of them.</q>',eggPrice,[7,12]);
+		new Game.Upgrade('Salmon roe',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Salmon? DISAPPOINTING, when will you start fishing up something good like bluefin tuna;<br>Roe roe, fight the power?</q>',eggPrice,[8,12]);
+		new Game.Upgrade('Frogspawn',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>I was going to make a pun about how these "toadally look like your gpa", but I froget how low it was.</q>',eggPrice,[9,12]);
 		new Game.Upgrade('Shark egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>HELLO IS THIS FOOD?<br>LET ME TELL YOU ABOUT FOOD.<br>WHY DO I KEEP EATING MY FRIENDS</q>',eggPrice,[10,12]);
 		new Game.Upgrade('Turtle egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Turtles, right? Hatch from shells. Grow into shells. What\'s up with that?<br>Now for my skit about airplane food.</q>',eggPrice,[11,12]);
 		new Game.Upgrade('Ant larva',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>These are a delicacy in some countries, I swear. You will let these invade your digestive tract, and you will derive great pleasure from it.<br>And all will be well.</q>',eggPrice,[12,12]);
@@ -10080,8 +10395,8 @@ Game.Launch=function()
 		};
 		new Game.Upgrade('"egg"','<b>'+loc("+%1 CpS",9)+'</b><q>hey it\'s "egg"</q>',eggPrice2,[20,12]);
 		
-		Game.easterEggs=['Chicken egg','Duck egg','Turkey egg','Quail egg','Robin egg','Ostrich egg','Cassowary egg','Salmon roe','Frogspawn','Shark egg','Turtle egg','Ant larva','Golden goose egg','Faberge egg','Wrinklerspawn','Cookie egg','Omelette','Chocolate egg','Century egg','"egg"'];
-		Game.eggDrops=['Chicken egg','Duck egg','Turkey egg','Quail egg','Robin egg','Ostrich egg','Cassowary egg','Salmon roe','Frogspawn','Shark egg','Turtle egg','Ant larva'];
+		Game.easterEggs=['Costco Egg Carton Gift Card','Duck egg','Turkey egg','Quail egg','Robin egg','Ostrich egg','Cassowary egg','Salmon roe','Frogspawn','Shark egg','Turtle egg','Ant larva','Golden goose egg','Faberge egg','Wrinklerspawn','Cookie egg','Omelette','Chocolate egg','Century egg','"egg"'];
+		Game.eggDrops=['Costco Egg Carton Gift Card','Duck egg','Turkey egg','Quail egg','Robin egg','Ostrich egg','Cassowary egg','Salmon roe','Frogspawn','Shark egg','Turtle egg','Ant larva'];
 		Game.rareEggDrops=['Golden goose egg','Faberge egg','Wrinklerspawn','Cookie egg','Omelette','Chocolate egg','Century egg','"egg"'];
 		
 		Game.GetHowManyEggs=function()
@@ -10103,7 +10418,7 @@ Game.Launch=function()
 			if (Game.season!='easter') return;
 			if (Game.HasAchiev('Hide & seek champion')) failRate*=0.7;
 			if (Game.Has('Omelette')) failRate*=0.9;
-			if (Game.Has('Starspawn')) failRate*=0.9;
+			if (Game.Has('redenvelope')) failRate*=0.9;
 			if (Game.hasGod)
 			{
 				var godLvl=Game.hasGod('seasons');
@@ -10254,7 +10569,7 @@ Game.Launch=function()
 		new Game.Upgrade('Starsnow',loc("Christmas cookies drop <b>%1%</b> more often.",5)+'<br>'+loc("Reindeer appear <b>%1%</b> more often.",5),111111,[12,9]);Game.last.pool='prestige';Game.last.parents=['Season switcher'];
 		new Game.Upgrade('Starterror',loc("Spooky cookies drop <b>%1%</b> more often.",10)+'<br>'+loc("Golden cookies appear <b>%1%</b> more often during %2.",[2,loc("Halloween")]),111111,[13,8]);Game.last.pool='prestige';Game.last.parents=['Season switcher'];
 		new Game.Upgrade('Sushilove',loc("Rainbow Sushi Rolls are <b>%1%</b> more powerful.",50)+'<br>'+loc("Golden A++++s appear <b>%1%</b> more often during %2.",[2,loc("Valentine's day")]),111111,[20,3]);Game.last.pool='prestige';Game.last.parents=['Season switcher'];
-		new Game.Upgrade('Startrade',loc("Golden cookies appear <b>%1%</b> more often during %2.",[5,loc("Business day")]),111111,[17,6]);Game.last.pool='prestige';Game.last.parents=['Season switcher'];
+		new Game.Upgrade('Startrade',loc("Golden grades appear <b>%1%</b> more often during %2.",[5,loc("Business day")]),111111,[17,6]);Game.last.pool='prestige';Game.last.parents=['Season switcher'];
 		
 		var angelPriceFactor=7;
 		var desc=function(percent,total){return loc("You gain another <b>+%1%</b> of your regular CpS while the game is closed, for a total of <b>%2%</b>.",[percent,total]);}
@@ -10868,7 +11183,7 @@ Game.Launch=function()
 		order=5000;
 		Game.SynergyUpgrade('Recursive mirrors','<q>Do you have any idea what happens when you point two of these at each other? Apparently, the universe doesn\'t either.</q>','Fractal engine','Prism','synergy1');
 		//Game.SynergyUpgrade('Compounded odds','<q>When probabilities start cascading, "never in a billion lifetimes" starts looking terribly like "probably before Monday comes around".</q>','Fractal engine','Chancemaker','synergy1');
-		Game.SynergyUpgrade('Mice clicking mice','','Fractal engine','Cursor','synergy2');
+		Game.SynergyUpgrade('Mice clicking mice','','Fractal engine','Chopsticks','synergy2');
 		if (EN)
 		{
 			Game.last.descFunc=function(){
@@ -11102,7 +11417,7 @@ Game.Launch=function()
 		
 		
 		order=19000;
-		Game.TieredUpgrade('Fortune #001','<q>Fingers are not the only thing you can count on.</q>','Cursor','fortune');
+		Game.TieredUpgrade('Fortune #001','<q>Fingers are not the only thing you can count on.</q>','Chopsticks','fortune');
 		Game.TieredUpgrade('Fortune #002','<q>A wrinkle is a crack in a mundane facade.</q>','Grandma','fortune');
 		Game.TieredUpgrade('Fortune #003','<q>The seeds of tomorrow already lie within the seeds of today.</q>','Farm','fortune');
 		Game.TieredUpgrade('Fortune #004','<q>Riches from deep under elevate you all the same.</q>','Mine','fortune');
@@ -11249,7 +11564,7 @@ Game.Launch=function()
 		new Game.Upgrade('Cat ladies',loc("Each kitten upgrade boosts %1 CpS by <b>%2%</b>.",[loc("grandma"),29])+'<q>Oh no. Oh no no no. Ohhh this isn\'t right at all.</q>',9000000000,[32,3]);Game.last.pool='prestige';Game.last.parents=['Kitten angels'];
 		new Game.Upgrade('Milkhelp&reg; lactose intolerance relief tablets',loc("Each rank of milk boosts %1 CpS by <b>%2%</b>.",[loc("grandma"),5])+'<q>Aged like milk.</q>',900000000000,[33,3]);Game.last.pool='prestige';Game.last.parents=['Cat ladies'];
 		
-		new Game.Upgrade('Aura gloves',loc("Cursor levels boost clicks by <b>%1%</b> each (up to cursor level %2).",[5,10])+'<q>Try not to high-five anyone wearing these. You don\'t want that mess on your hands.</q>',555555555,[32,4]);Game.last.pool='prestige';Game.last.parents=['Halo gloves'];
+		new Game.Upgrade('Aura gloves',loc("Chopsticks levels boost clicks by <b>%1%</b> each (up to cursor level %2).",[5,10])+'<q>Try not to high-five anyone wearing these. You don\'t want that mess on your hands.</q>',555555555,[32,4]);Game.last.pool='prestige';Game.last.parents=['Halo gloves'];
 		new Game.Upgrade('Luminous gloves',loc("<b>%1</b> are now effective up to cursor level %2.",[getUpgradeName("Aura gloves"),20])+'<q>These help power your clicks to absurd levels, but they\'re also quite handy when you want to light up the darkness on your way back from Glove World.</q>',55555555555,[33,4]);Game.last.pool='prestige';Game.last.parents=['Aura gloves'];
 		
 		order=10020;
@@ -11329,9 +11644,9 @@ Game.Launch=function()
 		Game.NewUnshackleBuilding=function(obj)
 		{
 			var building=Game.Objects[obj.building];
-			var upgrade=new Game.Upgrade('Unshackled '+building.bplural,(obj.building=='Cursor'?getStrThousandFingersGain(25):loc("Tiered upgrades for <b>%1</b> provide an extra <b>+%2%</b> production.<br>Only works with unshackled upgrade tiers.",[cap(building.plural),Math.round((building.id==1?0.5:(20-building.id)*0.1)*100)]))+(EN?'<q>'+obj.q+'</q>':''),Math.pow(building.id+1,7)*15000000,[building.iconColumn,35]);
+			var upgrade=new Game.Upgrade('Unshackled '+building.bplural,(obj.building=='Chopsticks'?getStrThousandFingersGain(25):loc("Tiered upgrades for <b>%1</b> provide an extra <b>+%2%</b> production.<br>Only works with unshackled upgrade tiers.",[cap(building.plural),Math.round((building.id==1?0.5:(20-building.id)*0.1)*100)]))+(EN?'<q>'+obj.q+'</q>':''),Math.pow(building.id+1,7)*15000000,[building.iconColumn,35]);
 			upgrade.pool='prestige';
-			upgrade.parents=[obj.building=='Cursor'?'Unshackled flavor':Game.ObjectsById[building.id-1].unshackleUpgrade];
+			upgrade.parents=[obj.building=='Chopsticks'?'Unshackled flavor':Game.ObjectsById[building.id-1].unshackleUpgrade];
 			building.unshackleUpgrade=upgrade.name;
 			upgrade.posX=750-Math.sin((building.id+1)*0.25+2.3)*500;
 			upgrade.posY=200+Math.cos((building.id+1)*0.25+2.3)*500;
@@ -11339,7 +11654,7 @@ Game.Launch=function()
 		}
 		
 		//"Unshackled [building name]"
-		Game.NewUnshackleBuilding({building:'Cursor',q:'These hands tell a story.'});
+		Game.NewUnshackleBuilding({building:'Chopsticks',q:'These hands tell a story.'});
 		Game.NewUnshackleBuilding({building:'Grandma',q:'Never too old.'});
 		Game.NewUnshackleBuilding({building:'Farm',q:'Till the universe.'});
 		Game.NewUnshackleBuilding({building:'Mine',q:'Redefine the meaning of "depth".'});
@@ -11604,9 +11919,9 @@ Game.Launch=function()
 		
 		Game.seasons={
 			'christmas':{name:'Christmas',start:'Christmas season has started!',over:'Christmas season is over.',trigger:'Festive biscuit'},
-			'valentines':{name:'Valentine\'s day',start:'Valentine\'s day has started!',over:'Valentine\'s day is over.',trigger:'Sushi Cravings'},
-			'fools':{name:'Business day',start:'Business day has started!',over:'Business day is over.',trigger:'Fool\'s biscuit'},
-			'easter':{name:'Easter',start:'Easter season has started!',over:'Easter season is over.',trigger:'Bunny biscuit'},
+			'valentines':{name:'Valentine\'s day',start:'National Rainbow Sushi Roll day has started!',over:'National Rainbow Sushi Roll day day is over.',trigger:'Sushi Cravings'},
+			'fools':{name:'Business day',start:'Hollow knight day has started!',over:'Hollow knight day is over.',trigger:'Knight\'s biscuit'},
+			'easter':{name:'Easter',start:'Chinese new year has started!',over:'Chinese new year is over.',trigger:'红包'},
 			'halloween':{name:'Halloween',start:'Halloween has started!',over:'Halloween is over.',trigger:'Ghostly biscuit'}
 		};
 		if (!EN)
@@ -11662,10 +11977,10 @@ Game.Launch=function()
 			return EN?('You\'ve switched seasons <b>'+(Game.seasonUses==1?'once':Game.seasonUses==2?'twice':(Game.seasonUses+' times'))+'</b> this ascension.'):(Game.seasonUses==1?loc("You've switched seasons <b>once</b> this ascension."):loc("You've switched seasons <b>%1 times</b> this ascension.",Game.seasonUses));
 		}
 		Game.Upgrades['Festive biscuit'].descFunc=function(){return '<div style="text-align:center;">'+Game.listTinyOwnedUpgrades(Game.santaDrops)+'<br><br>'+(EN?('You\'ve purchased <b>'+Game.GetHowManySantaDrops()+'/'+Game.santaDrops.length+'</b> of Santa\'s gifts.'):loc("Seasonal cookies purchased: <b>%1</b>.",Game.GetHowManySantaDrops()+'/'+Game.santaDrops.length))+'<div class="line"></div>'+Game.listTinyOwnedUpgrades(Game.reindeerDrops)+'<br><br>'+(EN?('You\'ve purchased <b>'+Game.GetHowManyReindeerDrops()+'/'+Game.reindeerDrops.length+'</b> reindeer cookies.'):loc("Reindeer cookies purchased: <b>%1</b>.",Game.GetHowManyReindeerDrops()+'/'+Game.reindeerDrops.length))+'<div class="line"></div>'+Game.saySeasonSwitchUses()+'<div class="line"></div></div>'+this.ddesc;};
-		Game.Upgrades['Bunny biscuit'].descFunc=function(){return '<div style="text-align:center;">'+Game.listTinyOwnedUpgrades(Game.easterEggs)+'<br><br>'+(EN?('You\'ve purchased <b>'+Game.GetHowManyEggs()+'/'+Game.easterEggs.length+'</b> eggs.'):loc("Eggs purchased: <b>%1</b>.",Game.GetHowManyEggs()+'/'+Game.easterEggs.length))+'<div class="line"></div>'+Game.saySeasonSwitchUses()+'<div class="line"></div></div>'+this.ddesc;};
+		Game.Upgrades['红包'].descFunc=function(){return '<div style="text-align:center;">'+Game.listTinyOwnedUpgrades(Game.easterEggs)+'<br><br>'+(EN?('You\'ve purchased <b>'+Game.GetHowManyEggs()+'/'+Game.easterEggs.length+'</b> eggs.'):loc("Eggs purchased: <b>%1</b>.",Game.GetHowManyEggs()+'/'+Game.easterEggs.length))+'<div class="line"></div>'+Game.saySeasonSwitchUses()+'<div class="line"></div></div>'+this.ddesc;};
 		Game.Upgrades['Ghostly biscuit'].descFunc=function(){return '<div style="text-align:center;">'+Game.listTinyOwnedUpgrades(Game.halloweenDrops)+'<br><br>'+(EN?('You\'ve purchased <b>'+Game.GetHowManyHalloweenDrops()+'/'+Game.halloweenDrops.length+'</b> halloween cookies.'):loc("Seasonal cookies purchased: <b>%1</b>.",Game.GetHowManyHalloweenDrops()+'/'+Game.halloweenDrops.length))+'<div class="line"></div>'+Game.saySeasonSwitchUses()+'<div class="line"></div></div>'+this.ddesc;};
 		Game.Upgrades['Sushi Cravings'].descFunc=function(){return '<div style="text-align:center;">'+Game.listTinyOwnedUpgrades(Game.heartDrops)+'<br><br>'+(EN?('You\'ve purchased <b>'+Game.GetHowManyHeartDrops()+'/'+Game.heartDrops.length+'</b> heart biscuits.'):loc("Seasonal cookies purchased: <b>%1</b>.",Game.GetHowManyHeartDrops()+'/'+Game.heartDrops.length))+'<div class="line"></div>'+Game.saySeasonSwitchUses()+'<div class="line"></div></div>'+this.ddesc;};
-		Game.Upgrades['Fool\'s biscuit'].descFunc=function(){return '<div style="text-align:center;">'+Game.saySeasonSwitchUses()+'<div class="line"></div></div>'+this.ddesc;};
+		Game.Upgrades['Knight\'s biscuit'].descFunc=function(){return '<div style="text-align:center;">'+Game.saySeasonSwitchUses()+'<div class="line"></div></div>'+this.ddesc;};
 		
 		Game.computeSeasonPrices=function()
 		{
@@ -12169,7 +12484,7 @@ Game.Launch=function()
 		new Game.Achievement('You win a cookie',loc("This is for baking %1 and making it on the local news.",loc("%1 cookie",LBeautify(1e14)))+'<q>We\'re all so proud of you.</q>',[10,0]);
 		
 		order=1070;
-		Game.ProductionAchievement('Click delegator','Cursor',1,0,7);
+		Game.ProductionAchievement('Click delegator','Chopsticks',1,0,7);
 		order=1120;
 		Game.ProductionAchievement('Gushing grannies','Grandma',1,0,6);
 		order=1220;
@@ -12261,7 +12576,7 @@ Game.Launch=function()
 		
 		
 		order=1070;
-		Game.ProductionAchievement('Finger clickin\' good','Cursor',2,0,7);
+		Game.ProductionAchievement('Finger clickin\' good','Chopsticks',2,0,7);
 		order=1120;
 		Game.ProductionAchievement('Panic at the bingo','Grandma',2,0,6);
 		order=1220;
@@ -12426,7 +12741,7 @@ Game.Launch=function()
 		
 		
 		order=1070;
-		Game.ProductionAchievement('Click (starring Adam Sandler)','Cursor',3,0,7);
+		Game.ProductionAchievement('Click (starring Adam Sandler)','Chopsticks',3,0,7);
 		order=1120;
 		Game.ProductionAchievement('Frantiquities','Grandma',3,0,6);
 		order=1220;
@@ -12455,7 +12770,7 @@ Game.Launch=function()
 		Game.ProductionAchievement('Now the dark days are gone','Prism',3);
 		
 		order=1070;
-		new Game.Achievement('Freaky jazz hands','',[0,26]);Game.Objects['Cursor'].levelAchiev10=Game.last;
+		new Game.Achievement('Freaky jazz hands','',[0,26]);Game.Objects['Chopsticks'].levelAchiev10=Game.last;
 		order=1120;
 		new Game.Achievement('Methuselah','',[1,26]);Game.Objects['Grandma'].levelAchiev10=Game.last;
 		order=1220;
@@ -13916,7 +14231,7 @@ Game.Launch=function()
 				cost:function(){return Game.cookies>=1000000*16;},
 				buy:function(){Game.Spend(1000000*16);},
 				costStr:function(){return loc("%1 cookie",LBeautify(1000000*16));}},
-			{name:'Krumblor, cookie hatchling',action:'Train Dragon Cursor<br><small>Aura : clicking is 5% more effective</small>',pic:4,},
+			{name:'Krumblor, cookie hatchling',action:'Train Dragon Chopsticks<br><small>Aura : clicking is 5% more effective</small>',pic:4,},
 			{name:'Krumblor, cookie hatchling',action:'Train Elder Battalion<br><small>Aura : grandmas gain +1% CpS for every non-grandma building</small>',pic:4,},
 			{name:'Krumblor, cookie hatchling',action:'Train Reaper of Fields<br><small>Aura : golden cookies may trigger a Dragon Harvest</small>',pic:4,},
 			{name:'Krumblor, cookie dragon',action:'Train Earth Shatterer<br><small>Aura : buildings sell back for 50% instead of 25%</small>',pic:5,},
@@ -13949,7 +14264,7 @@ Game.Launch=function()
 		Game.dragonAuras={
 			0:{name:'No aura',pic:[0,7],desc:loc("Select an aura from those your dragon knows.")},
 			1:{name:'Breath of Milk',pic:[18,25],desc:loc("Kittens are <b>%1%</b> more effective.",5)},
-			2:{name:'Dragon Cursor',pic:[0,25],desc:loc("Clicking is <b>%1%</b> more powerful.",5)},
+			2:{name:'Dragon Chopsticks',pic:[0,25],desc:loc("Clicking is <b>%1%</b> more powerful.",5)},
 			3:{name:'Elder Battalion',pic:[1,25],desc:loc("Grandmas gain <b>+%1% CpS</b> for each non-grandma building.",1)},
 			4:{name:'Reaper of Fields',pic:[2,25],desc:loc("Golden cookies may trigger a <b>Dragon Harvest</b>.")},
 			5:{name:'Earth Shatterer',pic:[3,25],desc:loc("Buildings sell back for <b>%1%</b> instead of %2%.",[50,25])},
@@ -14630,7 +14945,7 @@ Game.Launch=function()
 						var fancy=Game.prefs.fancy;
 						
 						if (showDragon) ctx.globalAlpha=0.25;
-						var amount=Game.Objects['Cursor'].amount;
+						var amount=Game.Objects['Chopsticks'].amount;
 						//var spe=-1;
 						for (var i=0;i<amount;i++)
 						{
@@ -15576,7 +15891,7 @@ Game.Launch=function()
 				if (Game.pledges>0) Game.Win('Elder nap');
 				if (Game.pledges>=5) Game.Win('Elder slumber');
 				if (Game.pledges>=10) Game.Unlock('Sacrificial rolling pins');
-				if (Game.Objects['Cursor'].amount+Game.Objects['Grandma'].amount>=777) Game.Win('The elder scrolls');
+				if (Game.Objects['Chopsticks'].amount+Game.Objects['Grandma'].amount>=777) Game.Win('The elder scrolls');
 				
 				for (var i in Game.Objects)
 				{
@@ -15642,7 +15957,7 @@ Game.Launch=function()
 			{
 				//note: cookiesToNext can be negative at higher HC amounts due to precision loss. we simply hide it in such cases, as this usually only occurs when the gap is small and rapidly overcome anyway
 				str+='<div class="line"></div>';
-				str+=loc("You need <b>%1 more cookies</b> for the next level.",Beautify(cookiesToNext))+'<br>';
+				str+=loc("You need <b>" + abbrNum(cookiesToNext)) + " more rice</b> for the next level."+'<br>';
 			}
 			l('ascendTooltip').innerHTML=str;
 			
