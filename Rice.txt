@@ -8,7 +8,7 @@ Calrose Rice = Hazlenut | done
 Japanese Short-Grain Rice = Walnut | done
 Sushi Rice = Cashew | done 
 Japanese Gluitonous Rice = Whit choc | done
-Fried Rice = Milk choc | done
+Egg Fried Rice = Milk choc | done
 Arborio Rice = macadamia nut | done
 Medium-Grain Brown Rice = double-chip | done
 Rice blends = white choc macadamia nut | done
@@ -140,7 +140,7 @@ Round British Tea Biscuits with Heart Motif = Rice and Sriracha
 Round Chocolate British TEa Biscuits with HEart Motif = rice and egg
 ---------------------------------------
 Box of Brand Biscuits = Specific Fried Rice
-Caramoas = Egg Fried Rice
+Caramoas = Pea Fried Rice
 Sagalongs = Kimchi Fried Rice
 Shortfoils = Spam Fried Rice
 Win Mints = Shrimp Fried Rice
@@ -256,3 +256,36 @@ Everybutter Biscuit = 100% Spam Musubi
 Other
 Dragon Cookie = Dragon Rice
 Birthday Cookie = Birthday Rice
+-------------------------------------------
+Milks:
+Plain milk 
+chocolate milk
+Raspberry Milk
+Orange Milk 
+Banana Milk
+Lime Milk
+Blueberry Milk
+Strawberry Milk
+Vanilla Milk
+Honey Milk
+Coffee Milk
+Tea Milk
+Coconut Milk
+Cherry Milk
+Spiced Milk
+maple Milk
+Mint Milk
+Licorice Milk
+Rose Milk
+Dragonfruit Milk
+Melon Milk
+Blackcurrant Milk
+Zebra Milk
+Cosmic Milk
+Flaming Milk
+Sanguine Milk
+Midas Milk
+Midnight Milk
+Green Inferno Milk
+Frostfire Milk
+Soy milk Milk

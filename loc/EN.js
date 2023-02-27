@@ -25,7 +25,7 @@ AddLanguage('EN','english',{
 	],
 	"%1 golden A+++": [
 		"%1 golden A+++",
-		"%1 golden A+++S"
+		"%1 golden A+++s"
 	],
 	"%1 building": [
 		"%1 building",
@@ -1883,7 +1883,7 @@ AddLanguage('EN','english',{
 	"[Upgrade name 9]Lubricated dentures": "Lubricated dentures",
 	"[Upgrade name 10]Cheap hoes": "Cheap hoes",
 	"[Upgrade name 11]Fertilizer": "Fertilizer",
-	"[Upgrade name 12]Cookie trees": "Cookie trees",
+	"[Upgrade name 12]Rice trees": "Rice trees",
 	"[Upgrade name 13]Sturdier conveyor belts": "Sturdier conveyor belts",
 	"[Upgrade name 14]Child labor": "Child labor",
 	"[Upgrade name 15]Sweatshop": "Sweatshop",
@@ -1894,7 +1894,7 @@ AddLanguage('EN','english',{
 	"[Upgrade name 20]Wormholes": "Wormholes",
 	"[Upgrade name 21]Frequent flyer": "Frequent flyer",
 	"[Upgrade name 22]Antimony": "Antimony",
-	"[Upgrade name 23]Essence of dough": "Essence of dough",
+	"[Upgrade name 23]Essence of rice": "Essence of rice",
 	"[Upgrade name 24]True chocolate": "True chocolate",
 	"[Upgrade name 25]Ancient tablet": "Ancient tablet",
 	"[Upgrade name 26]Insane oatling workers": "Insane oatling workers",

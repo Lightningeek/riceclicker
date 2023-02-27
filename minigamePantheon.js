@@ -1,4 +1,4 @@
-﻿var M={};
+﻿var M={}; 
 M.parent=Game.Objects['Temple'];
 M.parent.minigame=M;
 M.launch=function()
@@ -55,13 +55,13 @@ M.launch=function()
 				quote:'Your half asian friend Reid; This spirit knows about every grade you\'ll ever get, and enjoys dispensing a harsh beating.',
 			},
 			'seasons':{
-				name:'Selebrak, Spirit of Festivities',
+				name:'Selebrak, Spirit of Homework procrastination',
 				icon:[25,18],
 				descBefore:'<span class="green">Some seasonal effects are boosted.</span>',
 				desc1:'<span class="green">Large boost.</span> <span class="red">Switching seasons is 100% pricier.</span>',
 				desc2:'<span class="green">Medium boost.</span> <span class="red">Switching seasons is 50% pricier.</span>',
 				desc3:'<span class="green">Small boost.</span> <span class="red">Switching seasons is 25% pricier.</span>',
-				quote:'This is you; This is the spirit of merry getaways and regretful report card days mornings.',
+				quote:'This is you; This is the spirit of merry getaways and regretting the fact that your forgot to start the 69420 word essay that is due tommorow.',
 			},
 			'creation':{
 				name:'Dotjeiess, Spirit of Creation',
@@ -80,7 +80,7 @@ M.launch=function()
 				quote:'The cousin that your parents always compare you to; This spirit enjoys a good cheese after a day of hard work.',
 			},
 			'industry':{
-				name:'Jeremy, Spirit of Industry',
+				name:'Jeremy, Spirit of Communism',
 				icon:[28,18],
 				desc1:'<span class="green">Buildings produce 10% more cookies,</span> <span class="red">but golden and wrath cookies appear 10% less.</span>',
 				desc2:'<span class="green">Buildings produce 6% more cookies,</span> <span class="red">but golden and wrath cookies appear 6% less.</span>',
@@ -96,7 +96,7 @@ M.launch=function()
 				quote:'A caring spirit said to contain itself, inwards infinitely.',
 			},
 			'scorn':{
-				name:'Skruuia, Spirit of B',
+				name:'Skruuia, Spirit of Disappointment',
 				icon:[21,19],
 				descBefore:'<span class="red">All golden cookies are wrath cookies with a greater chance of a negative effect.</span>',
 				desc1:'<span class="green">Wrinklers appear 150% faster and digest 15% more cookies.</span>',
