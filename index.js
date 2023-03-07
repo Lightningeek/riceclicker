@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 const session = require('express-session');
 
 app.use(session({
-  secret: 'XKIY1FsYZ4NV#WH$pbI8%5eBXTwjunxMUJDvx@eb0W7v7Bzt$E',
+  secret: '!z1t3mh#k!42xRrR2L10k#p5vLSaHy72aL%tsQUs!1GjycHzRs',
   resave: false,
   saveUninitialized: true
 }));
@@ -61,7 +61,7 @@ app.post('/login', (req, res) => {
   const { username, password } = req.body;
 
   // Check if username and password are valid
-  if (username === 'admin' && password === 'password') {
+  if (username === 'riceclickerIsAsian' && password === 'riceclicker1234') {
     req.session.user = { username }; // Save the user in the session
     res.redirect('/'); // Redirect to the index page
   } else {

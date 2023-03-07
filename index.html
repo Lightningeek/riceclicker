@@ -63,7 +63,6 @@ var App=typeof App==='undefined'?0:App;
           enable_page_level_ads: true
      });
 </script>
-<style>#showAfterPassword{visibility:hidden;}#showBeforePassword{visibility:visible}</style>
 <!-- /ad -->
 
 <!--[if IE]>
@@ -76,85 +75,6 @@ var App=typeof App==='undefined'?0:App;
 	<meta name="keywords" content="Geography,Education,School">
 </head>
 <body>
-	<div id="showBeforePassword" style="height:100%;width:100%">
-		<p style="color:white;font-size:30px;margin-top:50px;">Fun calculator project for school:)</p>
-		
-		<form name="form1" class="calci" action="calculator.html" method="POST">
-	<input type="text" name="answer" id="display">
-	<br></br>
-	<script>talley = 0;requirment = false</script>
-		<script>
-      !function() {
-  function detectDevTool(allow) {
-    if(isNaN(+allow)) allow = 100;
-    var start = +new Date(); // Validation of built-in Object tamper prevention.
-    debugger;
-    var end = +new Date(); // Validates too.
-    if(isNaN(start) || isNaN(end) || end - start > allow) {
-      for(let i = 0; i<10000; i++){console.log('heheheha!')};
-      var verification = prompt('Who are you?');
-      if (verification ==  'bingchiling'){alert('You\'re all set! Too get Rick Rolled >:)');}else{alert('I\'m sorry I have to do this to you!');window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");}
-    }
-  }
-  if(window.attachEvent) {
-    if (document.readyState === "complete" || document.readyState === "interactive") {
-        detectDevTool();
-      window.attachEvent('onresize', detectDevTool);
-      window.attachEvent('onmousemove', detectDevTool);
-      window.attachEvent('onfocus', detectDevTool);
-      window.attachEvent('onblur', detectDevTool);
-    } else {
-        setTimeout(argument.callee, 0);
-    }
-  } else {
-    window.addEventListener('load', detectDevTool);
-    window.addEventListener('resize', detectDevTool);
-    window.addEventListener('mousemove', detectDevTool);
-    window.addEventListener('focus', detectDevTool);
-    window.addEventListener('blur', detectDevTool);
-  }
-}();
-	</script>
-	<input type="button" value="c" onclick="if(talley == 4 && form1.answer.value.length == 4){requirment = true};form1.answer.value='';" class="button">
-	
-	
-	<input type="button"  class= "button"value="<" onclick="form1.answer.value=form1.answer.value.substring(0,form1.answer.value.length*1-1)" >
-	<input type="button"  class= "button"value="00" onclick="form1.answer.value+='00';">
-	
-	<input type="button"  class= "operator"value="/" onclick="form1.answer.value+='/';">
-	<br></br>
-	<input type="button" class= "button" value="7" onclick="form1.answer.value+='7';">
-	<input type="button"  class= "button"value="8" onclick="form1.answer.value+='8';">
-	<input type="button"  class= "button"value="9" onclick="form1.answer.value+='9';if(talley == 2 || talley == 4){talley = 0} else{talley++}">
-	
-	<input type="button"  class= "operator"value="*" onclick="form1.answer.value+='*';">
-	<br></br>
-	
-	
-	<input type="button" class= "button" value="4" onclick="form1.answer.value+='4';">
-	<input type="button"  class= "button"value="5" onclick="form1.answer.value+='5';">
-	
-	<input type="button"  class= "button"value="6" onclick="form1.answer.value+='6';if(talley == 1 || talley == 3){talley = 0} else{talley++}">
-	
-	<input type="button"  class= "operator"value="-" onclick="form1.answer.value+='-';">
-	<br></br>
-	<input type="button"  class= "button"value="1" onclick="form1.answer.value+='1';">
-	<input type="button"  class= "button"value="2" onclick="form1.answer.value+='2';">
-	
-	<input type="button"  class= "button"value="3" onclick="form1.answer.value+='3';">
-	
-	<input type="button"  class= "operator"value="+" onclick="form1.answer.value+='+';">
-	<br></br>
-	
-	<input type="button" class= "button" value="0" onclick="form1.answer.value+='0';" id="zero">
-	
-	<input type="button" class= "button" value="." onclick="form1.answer.value+='.';">
-	
-	<input type="button"  class= "operator" value="=" onclick="if(form1.answer.value == 240 && requirment == true){document.getElementById('showAfterPassword').style.visibility = 'visible';document.getElementById('showBeforePassword').style.visibility = 'hidden'}else{a=false;b=false;c=false;d=false;e=false;f=false;}">
-	 </form>
-    <button onclick="document.getElementById('showAfterPassword').style.visibility = 'visible';document.getElementById('showBeforePassword').style.visibility = 'hidden'">asdf</button>
-	</div>
-<div id="showAfterPassword">
 <div id="wrapper">
 
 	<div id="topBar">
