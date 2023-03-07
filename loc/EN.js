@@ -2083,7 +2083,7 @@ AddLanguage('EN','english',{
 	"[Upgrade name 209]Red Envelope": "Red Envelope",
 	"[Upgrade name 210]Costco Egg Carton Gift Card": "Costco Egg Carton Gift Card",
 	"[Upgrade name 211]Free Pekking Duck Gift Card": "Free Pekking Duck Gift Card",
-	"[Upgrade name 212]American Diner Gift Card": "American Diner Gift Card",
+	"[Upgrade name 212]橄榄园 Gift Card": "橄榄园 Gift Card",
 	"[Upgrade name 213]Uwajimaya Gift Card": "Uwajimaya Gift Card",
 	"[Upgrade name 214]20% Off Robin Egg Coupon at pet store": "20% Off Robin Egg Coupon at pet store",
 	"[Upgrade name 215]Ostrich egg": "Ostrich egg",

@@ -10365,7 +10365,7 @@ Game.Launch=function()
 		var eggPrice2=99999999999999;
 		new Game.Upgrade('Chicken egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>The Asain. The Asian came first. Get over it.</q>',eggPrice,[1,12]);
 		new Game.Upgrade('Duck egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Peking duck is the best duck, dont argue.</q>',eggPrice,[2,12]);
-		new Game.Upgrade('Turkey egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>These hatch into strange, hand-shaped creatures.</q>',eggPrice,[3,12]);
+		new Game.Upgrade('Turkey egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Olive garden 的免费面包棒是最好吃的.</q>',eggPrice,[3,12]);
 		new Game.Upgrade('Quail egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>These eggs are positively tiny. I mean look at them. How does this happen? Whose idea was that?</q>',eggPrice,[4,12]);
 		new Game.Upgrade('Robin egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Holy azure-hued shelled embryos!</q>',eggPrice,[5,12]);
 		new Game.Upgrade('Ostrich egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>One of the largest eggs in the world. More like ostrouch, am I right?<br>Guys?</q>',eggPrice,[6,12]);
