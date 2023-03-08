@@ -2098,7 +2098,7 @@ AddLanguage('EN','english',{
 	"[Upgrade name 224]Wrinklerspawn": "Wrinklerspawn",
 	"[Upgrade name 225]Cookie egg": "Cookie egg",
 	"[Upgrade name 226]Omelette": "Omelette",
-	"[Upgrade name 227]Chocolate egg": "Chocolate egg",
+	"[Upgrade name 227]Rice egg": "Rice egg",
 	"[Upgrade name 228]Century egg": "Century egg",
 	"[Upgrade name 229]\"egg\"": "\"egg\"",
 	"[Upgrade name 230]Caramel macarons": "Caramel macarons",

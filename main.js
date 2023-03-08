@@ -5420,10 +5420,10 @@ Game.Launch=function()
 			mult*=catMult;
 			
 			var eggMult=1;
-			if (Game.Has('Chicken egg')) eggMult*=1.01;
-			if (Game.Has('Duck egg')) eggMult*=1.01;
-			if (Game.Has('Turkey egg')) eggMult*=1.01;
-			if (Game.Has('Quail egg')) eggMult*=1.01;
+			if (Game.Has('Costco egg carton gift card')) eggMult*=1.01;
+			if (Game.Has('Pekking Duck egg')) eggMult*=1.01;
+			if (Game.Has('Olive Garden Gift Card')) eggMult*=1.01;
+			if (Game.Has('Uwajimaya Gift Card')) eggMult*=1.01;
 			if (Game.Has('Robin egg')) eggMult*=1.01;
 			if (Game.Has('Ostrich egg')) eggMult*=1.01;
 			if (Game.Has('Cassowary egg')) eggMult*=1.01;
@@ -10363,10 +10363,10 @@ Game.Launch=function()
 		
 		var eggPrice=999999999999;
 		var eggPrice2=99999999999999;
-		new Game.Upgrade('Chicken egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>The Asain. The Asian came first. Get over it.</q>',eggPrice,[1,12]);
-		new Game.Upgrade('Duck egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Peking duck is the best duck, dont argue.</q>',eggPrice,[2,12]);
-		new Game.Upgrade('Turkey egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Olive garden 的免费面包棒是最好吃的.</q>',eggPrice,[3,12]);
-		new Game.Upgrade('Quail egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>These eggs are positively tiny. I mean look at them. How does this happen? Whose idea was that?</q>',eggPrice,[4,12]);
+		new Game.Upgrade('Costco egg carton gift card',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>The Asain. The Asian came first. Get over it.</q>',eggPrice,[1,12]);
+		new Game.Upgrade('Pekking Duck egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Peking duck is the best duck, dont argue.</q>',eggPrice,[2,12]);
+		new Game.Upgrade('Olive Garden Gift Card',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Olive garden 的免费面包棒是最好吃的.</q>',eggPrice,[3,12]);
+		new Game.Upgrade('Uwajimaya Gift Card',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>I WILL get all those sushi rolls before you</q>',eggPrice,[4,12]);
 		new Game.Upgrade('Robin egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Holy azure-hued shelled embryos!</q>',eggPrice,[5,12]);
 		new Game.Upgrade('Ostrich egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>One of the largest eggs in the world. More like ostrouch, am I right?<br>Guys?</q>',eggPrice,[6,12]);
 		new Game.Upgrade('Cassowary egg',getStrCookieProductionMultiplierPlus(1)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>The cassowary is taller than you, possesses murderous claws and can easily outrun you.<br>You\'d do well to be casso-wary of them.</q>',eggPrice,[7,12]);
@@ -10380,10 +10380,10 @@ Game.Launch=function()
 		new Game.Upgrade('Wrinklerspawn',loc("Wrinklers explode into <b>%1% more cookies</b>.",5)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Look at this little guy! It\'s gonna be a big boy someday! Yes it is!</q>',eggPrice2,[15,12]);
 		new Game.Upgrade('Cookie egg',loc("Clicking is <b>%1%</b> more powerful.",10)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>The shell appears to be chipped.<br>I wonder what\'s inside this one!</q>',eggPrice2,[16,12]);
 		new Game.Upgrade('Omelette',loc("Other eggs appear <b>%1% more frequently</b>.",10)+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Fromage not included.</q>',eggPrice2,[17,12]);
-		new Game.Upgrade('Chocolate egg',loc("Contains <b>a lot of cookies</b>.")+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Laid by the elusive cocoa bird. There\'s a surprise inside!</q>',eggPrice2,[18,12],function()
+		new Game.Upgrade('Rice egg',loc("Contains <b>a lot of cookies</b>.")+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>What? Is this really necessary? Do Americans really have to eat rice like this?</q>',eggPrice2,[18,12],function()
 		{
 			var cookies=Game.cookies*0.05;
-			Game.Notify('Chocolate egg',loc("The egg bursts into <b>%1</b> cookies!",Beautify(cookies)),Game.Upgrades['Chocolate egg'].icon);
+			Game.Notify('Rice egg',loc("The egg bursts into <b>%1</b> cookies!",Beautify(cookies)),Game.Upgrades['Rice egg'].icon);
 			Game.Earn(cookies);
 		});
 		new Game.Upgrade('Century egg',loc("You continually gain <b>more CpS the longer you've played</b> in the current ascension.")+'<br>'+loc("Cost scales with how many eggs you own.")+'<q>Actually not centuries-old. This one isn\'t a day over 86!</q>',eggPrice2,[19,12]);
@@ -10395,9 +10395,9 @@ Game.Launch=function()
 		};
 		new Game.Upgrade('"egg"','<b>'+loc("+%1 CpS",9)+'</b><q>hey it\'s "egg"</q>',eggPrice2,[20,12]);
 		
-		Game.easterEggs=['Chicken egg','Duck egg','Turkey egg','Quail egg','Robin egg','Ostrich egg','Cassowary egg','Salmon roe','Frogspawn','Shark egg','Turtle egg','Ant larva','Golden goose egg','Faberge egg','Wrinklerspawn','Cookie egg','Omelette','Chocolate egg','Century egg','"egg"'];
-		Game.eggDrops=['Chicken egg','Duck egg','Turkey egg','Quail egg','Robin egg','Ostrich egg','Cassowary egg','Salmon roe','Frogspawn','Shark egg','Turtle egg','Ant larva'];
-		Game.rareEggDrops=['Golden goose egg','Faberge egg','Wrinklerspawn','Cookie egg','Omelette','Chocolate egg','Century egg','"egg"'];
+		Game.easterEggs=['Costco egg carton gift card','Pekking Duck egg','Olive Garden Gift Card','Uwajimaya Gift Card','Robin egg','Ostrich egg','Cassowary egg','Salmon roe','Frogspawn','Shark egg','Turtle egg','Ant larva','Golden goose egg','Faberge egg','Wrinklerspawn','Cookie egg','Omelette','Rice egg','Century egg','"egg"'];
+		Game.eggDrops=['Costco egg carton gift card','Pekking Duck egg','Olive Garden Gift Card','Uwajimaya Gift Card','Robin egg','Ostrich egg','Cassowary egg','Salmon roe','Frogspawn','Shark egg','Turtle egg','Ant larva'];
+		Game.rareEggDrops=['Golden goose egg','Faberge egg','Wrinklerspawn','Cookie egg','Omelette','Rice egg','Century egg','"egg"'];
 		
 		Game.GetHowManyEggs=function()
 		{
